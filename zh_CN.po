@@ -7,22 +7,22 @@ msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-26 14:51+0000\n"
-"PO-Revision-Date: 2024-04-30 17:41+0800\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"PO-Revision-Date: 2024-04-30 21:21+0800\n"
+"Last-Translator: 老天@odoo123.com\n"
+"Language-Team: 开源之家\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_dashboard_board_id
 msgid ""
 "\n"
-"        Items Configuration and their position in the dashboard will be copied from the selected "
-"dashboard \n"
+"        Items Configuration and their position in the dashboard will be copied from the "
+"selected dashboard \n"
 "        and will be saved as template.\n"
 "    "
 msgstr ""
@@ -34,129 +34,132 @@ msgstr ""
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_previous_period
 msgid " Compare With Previous Period "
-msgstr ""
+msgstr " 与上一期间比较 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_update_items_data
 msgid " Data will be refreshed after the selected interval."
-msgstr ""
+msgstr " 数据将在所选时间间隔后刷新。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_relation_groupby
 msgid " Define the x-axis of the graph. "
-msgstr ""
+msgstr " D定义图表的 x-轴. "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_year_period
 msgid " Display the record for the same Date field for the last year. "
-msgstr ""
+msgstr " 显示上一年相同日期字段的记录。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_data_value
 msgid " Display value on the graph. . "
-msgstr ""
+msgstr " 在图形上显示值. . "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_pastwithout_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_pastwithout_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_pastwithout_now
 msgid " Past Excluding Today"
-msgstr ""
+msgstr " 今天之前不含今天"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_compare_period
-msgid " Provide the number of Date Filter Selection you want to include while displaying the record."
-msgstr "提供您希望在显示记录时包含的日期筛选器选择数量。"
+msgid ""
+" Provide the number of Date Filter Selection you want to include while displaying the "
+"record."
+msgstr " 提供您希望在显示记录时包含的日期筛选器选择数量。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_data_limit
 msgid " Records to be displayed on the graph"
-msgstr ""
+msgstr " 要在图形上显示的记录"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_background_color
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_header_bg_color
 msgid " Select the background color with transparency. "
-msgstr ""
+msgstr " 选择具有透明度的背景色。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_fields
 msgid " Select the fields you want to display in the list.  "
-msgstr ""
+msgstr " 选择要在列表中显示的字段。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_layout
 msgid " Select the layout to display records. "
-msgstr ""
+msgstr " 选择要显示记录的布局。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_sort_by_order
 msgid " Select the order of the sorting. "
-msgstr ""
+msgstr " 选择排序顺序. "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_target_view
 msgid " Select the view to compare target with data."
-msgstr ""
+msgstr " 选择要将目标与数据进行比较的视图。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_relation_sub_groupby
 msgid " Sub Group By"
-msgstr ""
+msgstr " 分组依据"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_auto_update_type__ks_update_interval
 msgid " Update after the selected interval"
-msgstr ""
+msgstr " 在选定的间隔后更新"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__60000
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__60000
 msgid "1 minute"
-msgstr ""
+msgstr "1 分钟"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__600000
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__600000
 msgid "10 minute"
-msgstr ""
+msgstr "10 分钟"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__15000
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__15000
 msgid "15 Seconds"
-msgstr ""
+msgstr "15 秒"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__120000
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__120000
 msgid "2 minute"
-msgstr ""
+msgstr "2 分钟"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__30000
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__30000
 msgid "30 Seconds"
-msgstr ""
+msgstr "30 秒"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__45000
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__45000
 msgid "45 Seconds"
-msgstr ""
+msgstr "45 秒"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__300000
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__300000
 msgid "5 minute"
-msgstr ""
+msgstr "5分钟"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
-"                                        You can find all items related to Dashboard Here.</p>\n"
+"                                        You can find all items related to Dashboard Here.</"
+"p>\n"
 "                                    "
 msgstr ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
@@ -166,41 +169,41 @@ msgstr ""
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__ks_action
 msgid "Action"
-msgstr "执行"
+msgstr "操作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_item_action_field
 msgid "Action Group By"
-msgstr ""
+msgstr "操作分组依据"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_action_lines
 msgid "Action Lines"
-msgstr ""
+msgstr "动作详情"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Action field: {} cannot be aggregated by {}"
-msgstr ""
+msgstr "动作字段: {} 无法由 {} 聚合"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_actions
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Actions"
-msgstr "执行"
+msgstr "动作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_active
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_is_active
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Active"
-msgstr "启用"
+msgstr "激活"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__ks_active
 msgid "Active Description"
-msgstr ""
+msgstr "动作描述"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -214,53 +217,52 @@ msgstr "添加"
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Add Item"
-msgstr ""
+msgstr "添加项目"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Add a Line"
-msgstr ""
+msgstr "添加一行"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#, fuzzy
 msgid "Add a Section"
-msgstr "添加一个章节"
+msgstr "添加小节"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
 #, python-format
 msgid "Add a condition"
-msgstr ""
+msgstr "添加条件"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
 msgid "Add a filter"
-msgstr "增加过滤条件"
+msgstr "添加筛选"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
 msgid "Add a separator"
-msgstr ""
+msgstr "添加分隔符"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Add button"
-msgstr ""
+msgstr "添加按钮"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Advance Configuration"
-msgstr ""
+msgstr "高级配置"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid ""
-"All Target Lines Changes Will be reflected on Chart after saving the record and pagination will be "
-"ignore ."
+"All Target Lines Changes Will be reflected on Chart after saving the record and pagination "
+"will be ignore ."
 msgstr "保存记录后，所有目标行更改都将反映在图表上，分页将被忽略。"
 
 #. module: ks_dashboard_ninja
@@ -269,22 +271,22 @@ msgstr "保存记录后，所有目标行更改都将反映在图表上，分页
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_none
 #, python-format
 msgid "All Time"
-msgstr ""
+msgstr "全部时间"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "All items can not be Imported"
-msgstr ""
+msgstr "无法导入所有项目"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Apply"
-msgstr "适用于物料的全局折扣"
+msgstr "应用"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -298,21 +300,21 @@ msgstr "归档"
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Are you sure that you want to archive all the selected records?"
-msgstr ""
+msgstr "是否确实要存档所有选定的记录？"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Are you sure you want to remove this item?"
-msgstr ""
+msgstr "是否确实要删除此项目？"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
 #, python-format
 msgid "Are you sure you want to remove this task?"
-msgstr ""
+msgstr "是否确实要删除此任务？"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -321,23 +323,23 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_area_chart
 #, python-format
 msgid "Area Chart"
-msgstr ""
+msgstr "面积图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_sort_by_order__asc
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_sort_by_order__asc
 msgid "Ascending"
-msgstr ""
+msgstr "升序"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Auto Update"
-msgstr ""
+msgstr "自动更新"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_auto_update_type
 msgid "Auto Update Type"
-msgstr ""
+msgstr "自动更新类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_data_count_type__average
@@ -348,7 +350,6 @@ msgstr "平均"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_background_color
-#, fuzzy
 msgid "Background Color"
 msgstr "背景颜色"
 
@@ -359,18 +360,17 @@ msgstr "背景颜色"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_bar_chart
 #, python-format
 msgid "Bar Chart"
-msgstr ""
+msgstr "柱状图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_base
-#, fuzzy
 msgid "Base"
-msgstr "知识库管理"
+msgstr "基础"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Below action will be performed at the end of the Drill Down Action"
-msgstr ""
+msgstr "以下操作将在向下搜索操作结束时执行"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_action
@@ -381,49 +381,54 @@ msgstr "取消"
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid ""
-"Cannot create target lines when Group By Date field is set to have aggregation in Minute and Hour case."
-msgstr ""
+"Cannot create target lines when Group By Date field is set to have aggregation in Minute "
+"and Hour case."
+msgstr "当“按日期分组”字段设置为在“分钟和小时”情况下具有聚合时，无法创建目标行。"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid ""
-"Cannot set aggregation having Date time (Hour, Minute) when target lines per date are being used. To "
-"proceed this, first delete target lines"
-msgstr "使用每个日期的目标行时，无法设置具有日期时间（小时，分钟）的聚合。 为此，请先删除目标行"
+"Cannot set aggregation having Date time (Hour, Minute) when target lines per date are being "
+"used. To proceed this, first delete target lines"
+msgstr ""
+"使用每个日期的目标行时，无法设置具有日期时间（小时，分钟）的聚合。 为此，请先删除目标行"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
-msgid "Changing Layout midway will set the default icon colour and font colour for selected layout."
-msgstr ""
+msgid ""
+"Changing Layout midway will set the default icon colour and font colour for selected layout."
+msgstr "中途更改布局将为所选布局设置默认的图标颜色和字体颜色。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_item_color
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Chart Color Palette"
-msgstr ""
+msgstr "图表调色板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_data
 msgid "Chart Data in string form"
-msgstr ""
+msgstr "字符串形式的图表数据"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_live_pop_up
 msgid "Checkbox to enable notification after every update. "
-msgstr ""
+msgstr "勾选表示每次更新后启用通知。. "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_previous_period
-msgid "Checkbox to show comparison between the data of present day and the previous selected period. "
-msgstr ""
+msgid ""
+"Checkbox to show comparison between the data of present day and the previous selected "
+"period. "
+msgstr "复选框，用于显示当前数据与上一选定时段数据的比较。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_icon_select
 msgid "Choose the Icon option. "
-msgstr ""
+msgstr "选择“图标”选项。 "
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -431,17 +436,17 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Clear"
-msgstr "清除"
+msgstr "清空"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_is_client_action
 msgid "Client Action"
-msgstr ""
+msgstr "客户端动作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_client_action
 msgid "Client Item Action"
-msgstr ""
+msgstr "客户端项目动作"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -454,12 +459,12 @@ msgstr "关闭"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_format__colombian
 msgid "Colombian Peso Format"
-msgstr ""
+msgstr "哥伦比亚比索格式"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Color Palette"
 msgstr "调色板"
 
@@ -468,7 +473,7 @@ msgstr "调色板"
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Coming Soon in Future :)"
-msgstr ""
+msgstr "未来即将推出：）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_company_id
@@ -483,7 +488,7 @@ msgstr "配置"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__cool
 msgid "Cool"
-msgstr ""
+msgstr "酷"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_data_count_type__count
@@ -494,9 +499,8 @@ msgstr "计数"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
-#, fuzzy
 msgid "Count..."
-msgstr "计数"
+msgstr "计数..."
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__create_uid
@@ -511,7 +515,7 @@ msgstr "计数"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__create_uid
 msgid "Created by"
-msgstr "创建者"
+msgstr "创建人"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__create_date
@@ -526,29 +530,29 @@ msgstr "创建者"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__create_date
 msgid "Created on"
-msgstr "创建于"
+msgstr "创建时间"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_cumulative
 msgid "Cumulative As Line"
-msgstr ""
+msgstr "累计为行"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_cumulative_field
 msgid "Cumulative Field"
-msgstr ""
+msgstr "累计字段"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "Current Json File is not properly formatted according to Dashboard Ninja Model."
-msgstr "当前的Json文件没有根据Dashboard Ninja模型正确格式化。"
+msgstr "根据Dashboard Ninja模型，当前Json文件的格式不正确。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board_template__ks_template_type__ks_custom
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_unit_selection__custom
 msgid "Custom"
-msgstr ""
+msgstr "自定义"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -559,24 +563,24 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_custom
 #, python-format
 msgid "Custom Filter"
-msgstr ""
+msgstr "自定义筛选"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
 msgid "Custom Filters"
-msgstr ""
+msgstr "自定义筛选"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_calculation_type__query
 msgid "Custom Query"
-msgstr ""
+msgstr "自定义查询"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Customize Dashboard"
-msgstr ""
+msgstr "自定义看板"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -586,7 +590,7 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "Customize Item"
-msgstr ""
+msgstr "自定义项目"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__ks_dashboard_board_id
@@ -601,38 +605,38 @@ msgstr "看板"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_custom_filters_ids
 msgid "Dashboard Custom Filters"
-msgstr ""
+msgstr "仪表板自定义筛选器"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_defined_filters
 msgid "Dashboard Defined Filter"
-msgstr ""
+msgstr "仪表板定义的筛选器"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_dashboard_item_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__ks_dashboard_item
 msgid "Dashboard Item"
-msgstr ""
+msgstr "看板项目"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_action
 msgid "Dashboard Item Action"
-msgstr ""
+msgstr "看板项目动作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_date_groupby
 msgid "Dashboard Item Chart Group By Type"
-msgstr ""
+msgstr "仪表板项目图表按类型分组"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_date_sub_groupby
 msgid "Dashboard Item Chart Sub Group By Type"
-msgstr ""
+msgstr "仪表板项目图表子组（按类型）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_item_type
 msgid "Dashboard Item Type"
-msgstr ""
+msgstr "看板项目类型"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
@@ -641,82 +645,82 @@ msgstr ""
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__ks_dashboard_item_ids
 #, python-format
 msgid "Dashboard Items"
-msgstr ""
+msgstr "看板项目"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.child_board_tree
 msgid "Dashboard Layout"
-msgstr ""
+msgstr "看板布局"
 
 #. module: ks_dashboard_ninja
 #: model:ir.ui.menu,name:ks_dashboard_ninja.dashboard_layout_menu
 msgid "Dashboard Layouts"
-msgstr ""
+msgstr "看板布局"
 
 #. module: ks_dashboard_ninja
 #: model:ir.actions.act_window,name:ks_dashboard_ninja.board_form_tree_action_window
 msgid "Dashboard Manager"
-msgstr ""
+msgstr "看板管理员"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__name
 msgid "Dashboard Name"
-msgstr ""
+msgstr "看板名称"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_board
 msgid "Dashboard Ninja"
-msgstr ""
+msgstr "忍者看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_child_board
 msgid "Dashboard Ninja Child Board"
-msgstr ""
+msgstr "忍者看板子看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_board_custom_filters
 msgid "Dashboard Ninja Custom Filters"
-msgstr ""
+msgstr "自定义过滤器"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_board_defined_filters
 msgid "Dashboard Ninja Defined Filters"
-msgstr ""
+msgstr "定义的过滤器"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_ninja_dashboard_item_action
 msgid "Dashboard Ninja Item Actions"
-msgstr ""
+msgstr "项目动作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_item_action
 msgid "Dashboard Ninja Items Action Lines"
-msgstr ""
+msgstr "项目动作详情"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_item_goal
 msgid "Dashboard Ninja Items Goal Lines"
-msgstr ""
+msgstr "项目目标详情"
 
 #. module: ks_dashboard_ninja
 #: model:ir.module.category,name:ks_dashboard_ninja.ks_dashboard_ninja_security_groups
 msgid "Dashboard Ninja Rights"
-msgstr ""
+msgstr "忍者看板权限"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_board_template
 msgid "Dashboard Ninja Template"
-msgstr ""
+msgstr "忍者看板模板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_item
 msgid "Dashboard Ninja items"
-msgstr ""
+msgstr "忍者看板项目"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_defined_filters_ids
 msgid "Dashboard Predefined Filters"
-msgstr ""
+msgstr "仪表板预定义筛选器"
 
 #. module: ks_dashboard_ninja
 #: model:ir.actions.act_window,name:ks_dashboard_ninja.template_tree_action_window
@@ -725,12 +729,12 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_template_form
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_template_tree
 msgid "Dashboard Template"
-msgstr ""
+msgstr "模板模板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.actions.act_window,name:ks_dashboard_ninja.layout_tree_action_window
 msgid "Dashboard layout"
-msgstr ""
+msgstr "看板布局"
 
 #. module: ks_dashboard_ninja
 #: model:ir.ui.menu,name:ks_dashboard_ninja.dashboard_menu
@@ -746,38 +750,38 @@ msgstr "数据"
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Data #2"
-msgstr ""
+msgstr "数据 #2"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Data Calculation"
-msgstr ""
+msgstr "数据计算"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_calculation_type
 msgid "Data Calculation Type"
-msgstr ""
+msgstr "数据计算类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_kpi_type__layout_2
 msgid "Data Comparison"
-msgstr ""
+msgstr "数据比较"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_measure_field_2
 msgid "Data Points displayed with a line in the graph. "
-msgstr ""
+msgstr "在图形中用线状显示的数据点。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_data_count_type
 msgid "Data Type"
-msgstr ""
+msgstr "数据类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_cumulative_field
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_measure_field
 msgid "Data points to be selected."
-msgstr ""
+msgstr "要选择的数据点。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__ks_model_id
@@ -785,7 +789,7 @@ msgstr ""
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_id
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_model_id
 msgid "Data source to fetch and read the data for the creation of dashboard items. "
-msgstr ""
+msgstr "数据源，用于获取和读取用于创建仪表板项的数据。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__ks_goal_date
@@ -797,19 +801,19 @@ msgstr "日期"
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Date Filter"
-msgstr ""
+msgstr "日期筛选器"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_field
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Date Filter Field"
-msgstr ""
+msgstr "日期筛选字段"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_selection
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Date Filter Selection"
-msgstr ""
+msgstr "日期筛选器选择"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__day
@@ -827,40 +831,40 @@ msgstr "默认"
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "Default Dashboard can't be deleted."
-msgstr ""
+msgstr "无法删除默认仪表板。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_date_filter_selection
 msgid "Default Date Filter"
-msgstr ""
+msgstr "默认日期筛选器"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
 #, python-format
 msgid "Default Icons"
-msgstr ""
+msgstr "默认图标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_calculation_type__custom
 msgid "Default Query"
-msgstr ""
+msgstr "默认查询"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_set_interval
 msgid "Default Update Interval"
-msgstr ""
+msgstr "默认更新间隔"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_extension
 msgid "Define conditions for filter to write manually"
-msgstr ""
+msgstr "定义过滤器手动写入的条件"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_domain
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain
 msgid "Define conditions for filter. "
-msgstr ""
+msgstr "定义筛选器的条件。 "
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -874,7 +878,7 @@ msgstr "删除"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_sort_by_order__desc
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_sort_by_order__desc
 msgid "Descending"
-msgstr ""
+msgstr "降序"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__ks_description
@@ -884,7 +888,7 @@ msgstr "描述"
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Deviation Field"
-msgstr ""
+msgstr "偏差字段"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -892,20 +896,19 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_quick_edit_view.xml:0
 #, python-format
 msgid "Discard"
-msgstr ""
+msgstr "丢弃"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Discard Changes"
-msgstr ""
+msgstr "放弃更改"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#, fuzzy
 msgid "Display"
-msgstr "时间线日期显示"
+msgstr "显示"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__display_name
@@ -925,12 +928,12 @@ msgstr "显示名称"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__display_type
 msgid "Display Type"
-msgstr ""
+msgstr "显示类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_unit
 msgid "Display the unit of the data."
-msgstr ""
+msgstr "显示数据的单位。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_domain
@@ -943,24 +946,24 @@ msgstr "域"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_extension
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Domain Extension"
-msgstr ""
+msgstr "域扩展"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__ks_domain_field_id
 msgid "Domain Field"
-msgstr ""
+msgstr "域字段"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_domain_temp
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_temp
 msgid "Domain Substitute"
-msgstr ""
+msgstr "域替换"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_filters.py:0
 #, python-format
 msgid "Domain can not be empty"
-msgstr ""
+msgstr "域不能为空"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -969,14 +972,14 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_doughnut_chart
 #, python-format
 msgid "Doughnut Chart"
-msgstr ""
+msgstr "环状图"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "Drill Up"
-msgstr ""
+msgstr "向上钻取"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -994,47 +997,46 @@ msgstr "重复"
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Edit Layout"
-msgstr ""
+msgstr "编辑布局"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
 #, python-format
 msgid "Edit Task"
-msgstr ""
+msgstr "编辑任务"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_goal_enable
 msgid "Enable Target"
-msgstr ""
+msgstr "启用目标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_end_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_end_date
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#, fuzzy
 msgid "End Date"
 msgstr "结束日期"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_format__global
 msgid "English Format"
-msgstr ""
+msgstr "英文格式"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_unit
 msgid "Enter Unit"
-msgstr ""
+msgstr "输入单位"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_data_formatting__exact
 msgid "Exact"
-msgstr ""
+msgstr "精确"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_format__exact
 msgid "Exact Value"
-msgstr ""
+msgstr "精确值"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1049,21 +1051,21 @@ msgstr "导出"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_export_all_records
 msgid "Export All Records"
-msgstr ""
+msgstr "导出所有记录"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "Export Chart"
-msgstr ""
+msgstr "导出图表"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Export Dashboard"
-msgstr ""
+msgstr "导出看板"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1072,7 +1074,7 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "Export Item"
-msgstr ""
+msgstr "导出项目"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1080,40 +1082,40 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "Export List"
-msgstr ""
+msgstr "导出列表"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Export to CSV"
-msgstr "导出为 csv"
+msgstr "导出CSV"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "Export to Excel"
-msgstr ""
+msgstr "导出Excel"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Fields Required : Name, Model, Icon (Default or Custom Upload), Layout"
-msgstr ""
+msgstr "必填字段：名称、型号、图标（默认或自定义上载）、布局"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_fields
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Fields to show in list"
-msgstr ""
+msgstr "要在列表中显示的字段"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_fill_temporal
 msgid "Fill Temporal Value"
-msgstr ""
+msgstr "填充时间值"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1127,32 +1129,31 @@ msgstr "筛选"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__name
 msgid "Filter Label"
-msgstr ""
+msgstr "筛选标签"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Font Awesome 4.7.0"
-msgstr ""
+msgstr "棒棒字体 4.7.0"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_font_color
 msgid "Font Color"
-msgstr ""
+msgstr "字体颜色"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_data_formatting
-#, fuzzy
 msgid "Format"
-msgstr "%s DSN 格式: %s"
+msgstr "格式"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_quick_edit_view.xml:0
 #, python-format
 msgid "Full Settings"
-msgstr ""
+msgstr "完整设置"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1162,7 +1163,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_future_starting_now
 #, python-format
 msgid "Future Starting Now"
-msgstr ""
+msgstr "未来从现在开始"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1172,83 +1173,83 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_futurestarting_tomorrow
 #, python-format
 msgid "Future Starting Tomorrow"
-msgstr ""
+msgstr "从明天开始的未来"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__sequence
 msgid "Gives the sequence order when displaying a list of payment terms lines."
-msgstr ""
+msgstr "在显示付款条件行列表时给出顺序。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_data_formatting__global
 msgid "Global"
-msgstr "全部"
+msgstr "全局"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Goal Lines"
-msgstr ""
+msgstr "目标线"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_graph_preview
 msgid "Graph Preview"
-msgstr ""
+msgstr "图形预览"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_group_access
 msgid "Group Access"
-msgstr ""
+msgstr "群组访问权限"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_relation_groupby
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Group By"
-msgstr "分组依据"
+msgstr "分组"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_item_action_date_groupby
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Group By Date"
-msgstr ""
+msgstr "按日期分组"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Groupby Field aggregation"
-msgstr ""
+msgstr "按字段分组聚合"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Groupby field: {} cannot be aggregated by {}"
-msgstr ""
+msgstr "Groupby 字段: {} 无法由 {} 聚合"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_list_view_type__grouped
 msgid "Grouped"
-msgstr ""
+msgstr "分组"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Groups/Dimensions"
-msgstr ""
+msgstr "群组/维度"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__ks_to_do_header
 msgid "Header"
-msgstr "Header"
+msgstr "头部"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_header_bg_color
 msgid "Header Background Color"
-msgstr ""
+msgstr "头部背景颜色"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_hide_legend
 msgid "Hide all legend from the chart item"
-msgstr ""
+msgstr "隐藏图表项中的所有图例"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1257,7 +1258,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_horizontalbar_chart
 #, python-format
 msgid "Horizontal Bar Chart"
-msgstr ""
+msgstr "横条图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__hour
@@ -1290,80 +1291,79 @@ msgstr "图标"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon_color
 msgid "Icon Color"
-msgstr ""
+msgstr "图标颜色"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_icon_select
 msgid "Icon Option"
-msgstr ""
+msgstr "图标选项"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_import_list_view_template.xml:0
 #, python-format
 msgid "Import Dashboard"
-msgstr ""
+msgstr "导入看板"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Import Item"
-msgstr ""
+msgstr "导入项目"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_compare_period
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Include Period"
-msgstr ""
+msgstr "包括期间"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_data_formatting__indian
 msgid "Indian"
-msgstr ""
+msgstr "印度"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_format__indian
 msgid "Indian Format"
-msgstr ""
+msgstr "印度格式"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Invalid Date"
-msgstr ""
+msgstr "无效日期"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__ks_active
-#, fuzzy
 msgid "Is Selected"
-msgstr "没有选择项目"
+msgstr "已选定"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Item Action"
-msgstr ""
+msgstr "项目动作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_gridstack_config
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__ks_gridstack_config
 msgid "Item Configurations"
-msgstr ""
+msgstr "项目配置"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Item Duplicated"
-msgstr ""
+msgstr "项目复制"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Item Moved"
-msgstr ""
+msgstr "项目移动"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_chart_type
@@ -1373,12 +1373,12 @@ msgstr "项目类型"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_update_items_data
 msgid "Item Update Interval"
-msgstr ""
+msgstr "项目更新间隔"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Item Update Interval.."
-msgstr ""
+msgstr "项目更新间隔..."
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1386,177 +1386,177 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_kpi
 #, python-format
 msgid "KPI"
-msgstr ""
+msgstr "KPI"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_kpi_data
 msgid "KPI Data"
-msgstr ""
+msgstr "KPI数据"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_extension_2
 msgid "KPI Domain Extension"
-msgstr ""
+msgstr "KPI域扩展"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_compare_period_2
 msgid "KPI Include Period"
-msgstr ""
+msgstr "KPI包括期间"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_count_2
 msgid "KPI Record Count"
-msgstr ""
+msgstr "KPI记录计数"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_year_period_2
 msgid "KPI Same Period Previous Years"
-msgstr ""
+msgstr "KPI上年同期"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_kpi_type__layout_1
 msgid "KPI With Target"
-msgstr ""
+msgstr "带有目标的KPI"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_comparison
 msgid "Kpi Data Type"
-msgstr ""
+msgstr "Kpi数据类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_field_2
 msgid "Kpi Date Filter Field"
-msgstr ""
+msgstr "Kpi日期筛选器字段"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_selection_2
 msgid "Kpi Date Filter Selection"
-msgstr ""
+msgstr "Kpi日期过滤器选择"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_2
 msgid "Kpi Domain"
-msgstr ""
+msgstr "Kpi 域"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_2_temp
 msgid "Kpi Domain Substitute"
-msgstr ""
+msgstr "Kpi域代替"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_end_date_2
 msgid "Kpi End Date"
-msgstr ""
+msgstr "Kpi 结束日期"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_kpi_type
 msgid "Kpi Layout"
-msgstr ""
+msgstr "Kpi布局"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_id_2
 msgid "Kpi Model"
-msgstr ""
+msgstr "Kpi 模型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_name_2
 msgid "Kpi Model Name"
-msgstr ""
+msgstr "Kpi 模型名称"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_kpi_preview
 msgid "Kpi Preview"
-msgstr ""
+msgstr "Kpi预览"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_field_2
 msgid "Kpi Record Field"
-msgstr ""
+msgstr "Kpi 记录字段"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_count_type_2
 msgid "Kpi Record Type"
-msgstr ""
+msgstr "Kpi 记录类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_start_date_2
 msgid "Kpi Start Date"
-msgstr ""
+msgstr "Kpi 开始日期"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_groupby_type
 msgid "Ks Chart Groupby Type"
-msgstr ""
+msgstr "Ks图表按类型分组"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_sub_groupby_type
 msgid "Ks Chart Sub Groupby Type"
-msgstr ""
+msgstr "Ks图表按类型分组"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_child_dashboard_ids
 msgid "Ks Child Dashboard"
-msgstr ""
+msgstr "Ks子看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_client_action_id
 msgid "Ks Dashboard Client Action"
-msgstr ""
+msgstr "Ks Dashboard客户端操作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_menu_id
 msgid "Ks Dashboard Menu"
-msgstr ""
+msgstr "Ks看板菜单"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_state
 msgid "Ks Dashboard State"
-msgstr ""
+msgstr "Ks看板状态"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dn_header_lines
 msgid "Ks Dn Header Lines"
-msgstr ""
+msgstr "Ks Dn 标题行"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__ks_dn_item_id
 msgid "Ks Dn Item"
-msgstr ""
+msgstr "Ks Dn 项目"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_gridstack_config
 msgid "Ks Gridstack Config"
-msgstr ""
+msgstr "Ks Gridstack 配置"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_isDateFilterApplied
 msgid "Ks Isdatefilterapplied"
-msgstr ""
+msgstr "Ks是否应用了日期筛选器"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_item_action_field_type
 msgid "Ks Item Action Field Type"
-msgstr ""
+msgstr "Ks项目操作字段类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_item_count
 msgid "Ks Item Count"
-msgstr ""
+msgstr "Ks项目计数"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_many2many_field_ordering
 msgid "Ks Many2Many Field Ordering"
-msgstr ""
+msgstr "Ks Many2Many字段排序"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__ks_to_do_description_lines
 msgid "Ks To Do Description Lines"
-msgstr ""
+msgstr "Ks待办事项描述行"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__ks_to_do_header_id
 msgid "Ks To Do Header"
-msgstr ""
+msgstr "Ks待办事项标题"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1564,9 +1564,9 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_month
-#, fuzzy, python-format
+#, python-format
 msgid "Last 30 days"
-msgstr "过去30天到期的合同"
+msgstr "最近30天"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1576,7 +1576,7 @@ msgstr "过去30天到期的合同"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_year
 #, python-format
 msgid "Last 365 days"
-msgstr ""
+msgstr "最近365天"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1586,7 +1586,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_week
 #, python-format
 msgid "Last 7 days"
-msgstr ""
+msgstr "最近7天"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1596,7 +1596,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_quarter
 #, python-format
 msgid "Last 90 days"
-msgstr ""
+msgstr "最近90天"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1606,7 +1606,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_day
 #, python-format
 msgid "Last Day"
-msgstr ""
+msgstr "昨天"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board____last_update
@@ -1621,7 +1621,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description____last_update
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers____last_update
 msgid "Last Modified on"
-msgstr "最后编辑于"
+msgstr "最后修改日"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1629,9 +1629,9 @@ msgstr "最后编辑于"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_month
-#, fuzzy, python-format
+#, python-format
 msgid "Last Month"
-msgstr "上月"
+msgstr "上个月"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1641,7 +1641,7 @@ msgstr "上月"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_quarter
 #, python-format
 msgid "Last Quarter"
-msgstr ""
+msgstr "上一季度"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__write_uid
@@ -1671,7 +1671,7 @@ msgstr "最后更新人"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__write_date
 msgid "Last Updated on"
-msgstr "最后更新于"
+msgstr "最后更新时间"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1681,7 +1681,7 @@ msgstr "最后更新于"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_week
 #, python-format
 msgid "Last Week"
-msgstr ""
+msgstr "上周"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1691,56 +1691,54 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_year
 #, python-format
 msgid "Last Year"
-msgstr ""
+msgstr "去年"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_layout
-#, fuzzy
 msgid "Layout"
-msgstr "动作按钮布局"
+msgstr "布局"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_layout__layout1
 msgid "Layout 1"
-msgstr ""
+msgstr "布局 1"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_layout__layout2
 msgid "Layout 2"
-msgstr ""
+msgstr "布局 2"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_layout__layout3
 msgid "Layout 3"
-msgstr ""
+msgstr "布局 3"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_layout__layout4
 msgid "Layout 4"
-msgstr ""
+msgstr "布局 4"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_layout__layout5
 msgid "Layout 5"
-msgstr ""
+msgstr "布局 5"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_layout__layout6
 msgid "Layout 6"
-msgstr ""
+msgstr "布局 6"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Layout Coming Soon"
-msgstr ""
+msgstr "布局即将推出"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
-#, fuzzy
 msgid "Layout..."
-msgstr "页面布局"
+msgstr "布局..."
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1749,14 +1747,14 @@ msgstr "页面布局"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_line_chart
 #, python-format
 msgid "Line Chart"
-msgstr ""
+msgstr "折线图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_measure_field_2
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Line Measure"
-msgstr ""
+msgstr "行距"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1765,61 +1763,61 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_list_view
 #, python-format
 msgid "List View"
-msgstr ""
+msgstr "列表视图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_data
 msgid "List View Data in JSon"
-msgstr ""
+msgstr "JSon中的列表视图数据"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_group_fields
 msgid "List View Grouped Fields"
-msgstr ""
+msgstr "列表视图分组字段"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_preview
 msgid "List View Preview"
-msgstr ""
+msgstr "列表视图预览"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_type
 msgid "List View Type"
-msgstr ""
+msgstr "列表视图类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_unit
 msgid "Maximum limit 5 characters, for ex: km, m"
-msgstr ""
+msgstr "最大限制5个字符，例如：km、m"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_measure_field
 msgid "Measure 1"
-msgstr ""
+msgstr "措施1"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Measures"
-msgstr ""
+msgstr "措施"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_menu_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__ks_dashboard_menu_name
 msgid "Menu Name"
-msgstr ""
+msgstr "菜单名称"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_menu_sequence
 msgid "Menu Sequence"
-msgstr ""
+msgstr "菜单序号"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__minute
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_sub_groupby__minute
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_item_action_date_groupby__minute
 msgid "Minute"
-msgstr "分"
+msgstr "分钟"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__ks_model_id
@@ -1828,7 +1826,7 @@ msgstr "分"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_model_id
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Model"
-msgstr "型号"
+msgstr "模型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_model_name
@@ -1838,35 +1836,32 @@ msgstr "模型名称"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
-#, fuzzy
 msgid "Model..."
-msgstr "型号"
+msgstr "模型..."
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_unit_selection__monetary
 msgid "Monetary"
-msgstr ""
+msgstr "货币"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_sub_groupby__month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_item_action_date_groupby__month
 msgid "Month"
-msgstr "月"
+msgstr "月份"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__month_year
 msgid "Month-Year"
-msgstr ""
+msgstr "月-年"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "More Info"
-msgstr ""
-"您可以从此处隐藏任何模型的任何字段、将任何字段变为只读或将任何字段设置为指定用户的必需字段。\n"
-"                                    <br/><br/>  更多信息 :"
+msgstr "更多信息"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1877,7 +1872,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_ninja_dashboard_item_action__ks_action__move
 #, python-format
 msgid "Move"
-msgstr "移动"
+msgstr "转移"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1886,14 +1881,14 @@ msgstr "移动"
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "Move/Duplicate"
-msgstr ""
+msgstr "移动/复制"
 
 #. module: ks_dashboard_ninja
 #: model:ir.actions.client,name:ks_dashboard_ninja.board_dashboard_action_window
 #: model:ir.ui.menu,name:ks_dashboard_ninja.board_menu_root
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_tree
 msgid "My Dashboard"
-msgstr ""
+msgstr "我的看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__name
@@ -1906,32 +1901,31 @@ msgstr "名称"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_company_id
 msgid "Name of the company for which analytics will be displayed in the dashboard. "
-msgstr ""
+msgstr "将在仪表板中显示其分析的公司的名称。 "
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
-#, fuzzy
 msgid "Name..."
-msgstr "名称"
+msgstr "名称..."
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__neon
 msgid "Neon"
-msgstr ""
+msgstr "霓虹"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
-#, fuzzy, python-format
+#, python-format
 msgid "New Task"
-msgstr "新任务"
+msgstr "新的任务"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "Next"
-msgstr "下一步"
+msgstr "下一个"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1939,9 +1933,9 @@ msgstr "下一步"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_day
-#, fuzzy, python-format
+#, python-format
 msgid "Next Day"
-msgstr "无法归档日志文件: %1$s. %2$s 已存在. 改天再试。"
+msgstr "次日"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1949,9 +1943,9 @@ msgstr "无法归档日志文件: %1$s. %2$s 已存在. 改天再试。"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_month
-#, fuzzy, python-format
+#, python-format
 msgid "Next Month"
-msgstr "下个月"
+msgstr "下月"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1961,7 +1955,7 @@ msgstr "下个月"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_quarter
 #, python-format
 msgid "Next Quarter"
-msgstr ""
+msgstr "下季度"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1971,7 +1965,7 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_week
 #, python-format
 msgid "Next Week"
-msgstr ""
+msgstr "下周"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -1981,28 +1975,28 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_year
 #, python-format
 msgid "Next Year"
-msgstr ""
+msgstr "明年"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "No Data Present"
-msgstr ""
+msgstr "数据不存在"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "No Section Available."
-msgstr ""
+msgstr "没有可用的部分。"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "No Tasks Available"
-msgstr ""
+msgstr "没有可用的任务"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2011,51 +2005,51 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_none
 #, python-format
 msgid "None"
-msgstr "无"
+msgstr "None"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Note :"
-msgstr "便签"
+msgstr "注释："
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Note:"
-msgstr "便签"
+msgstr "注释："
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
 #, python-format
 msgid "Number"
-msgstr "数字"
+msgstr "编号"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_format
 msgid "Number System"
-msgstr ""
+msgstr "编号系统"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_pagination_limit
 msgid "Pagination Limit"
-msgstr ""
+msgstr "分页范围"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Pagination limit value cannot be Negative or Zero"
-msgstr ""
+msgstr "分页范围值不能为负数或零"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Past Excluding Today"
-msgstr ""
+msgstr "过去不包括今天"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2065,14 +2059,14 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_past_until_now
 #, python-format
 msgid "Past Till Now"
-msgstr ""
+msgstr "过去到现在"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Percentage"
-msgstr "可用空间(百分比)"
+msgstr "百分比"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2081,32 +2075,32 @@ msgstr "可用空间(百分比)"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_pie_chart
 #, python-format
 msgid "Pie Chart"
-msgstr ""
+msgstr "饼状图"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "Please Install the Module which contains the following Model : %s ks_model_id"
-msgstr ""
+msgstr "请安装包含以下型号的模块 : %s ks_model_id"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Please chose any Data Type!"
-msgstr ""
+msgstr "请选择任意数据类型！"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Please enter start date and end date"
-msgstr ""
+msgstr "请输入开始日期和结束日期"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/lib/ks_date_filter_selections.py:0
 #, python-format
 msgid "Please set the local timezone."
-msgstr ""
+msgstr "请设置本地时区。"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2116,7 +2110,7 @@ msgid ""
 "Please use Font Awesome 4.7.0 icons only. E.g. 'fa-bell' or 'bell'.\n"
 "                                For more information visit"
 msgstr ""
-"请仅使用Font Awesome 4.7.0图标。例如。 “ fa-bell”或“ bell”。\n"
+"请仅使用Font Awesome 4.7.0图标。例如。 'fa-bell' 或 'bell'。\n"
 "                                欲了解更多信息，请访问"
 
 #. module: ks_dashboard_ninja
@@ -2126,18 +2120,17 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_polararea_chart
 #, python-format
 msgid "Polar Area Chart"
-msgstr ""
+msgstr "极地面积图"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
 msgid "Pre Defined Filters"
-msgstr ""
+msgstr "预定义过滤器"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board_template__ks_template_type__ks_default
-#, fuzzy
 msgid "Predefined"
-msgstr "预定义的"
+msgstr "预定义"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_preview
@@ -2150,28 +2143,28 @@ msgstr "预览"
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "Previous"
-msgstr "上一步"
+msgstr "上一个"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Print"
-msgstr ""
+msgstr "打印"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
 #, python-format
 msgid "Progress Bar"
-msgstr ""
+msgstr "进度条"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_sub_groupby__quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_item_action_date_groupby__quarter
 msgid "Quarter"
-msgstr ""
+msgstr "季度"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2180,46 +2173,45 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "Quick Customize"
-msgstr ""
+msgstr "快速自定义"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
 #, python-format
 msgid "Ratio"
-msgstr ""
+msgstr "比例"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_count
 msgid "Record Count"
-msgstr ""
+msgstr "记录计数"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_field
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Record Field"
-msgstr ""
+msgstr "记录字段"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Record Field..."
-msgstr ""
+msgstr "记录字段..."
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_data_limit
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_record_limit
 msgid "Record Limit"
-msgstr ""
+msgstr "记录范围"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_data_limit_visibility
 msgid "Record Limit Data Visibility"
-msgstr ""
+msgstr "记录范围数据可见性"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_count_type
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#, fuzzy
 msgid "Record Type"
 msgstr "记录类型"
 
@@ -2227,19 +2219,19 @@ msgstr "记录类型"
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Record Value"
-msgstr ""
+msgstr "记录值"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_actions
 msgid "Redirects you to the selected view. "
-msgstr ""
+msgstr "重定向到选定的视图。 "
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
-#, fuzzy, python-format
+#, python-format
 msgid "Remove"
-msgstr "删除外部链接"
+msgstr "移除"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2249,13 +2241,13 @@ msgstr "删除外部链接"
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
 #, python-format
 msgid "Remove Item"
-msgstr ""
+msgstr "移除项目"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_year_period
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Same Period Previous Years"
-msgstr ""
+msgstr "上年同期"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2271,67 +2263,65 @@ msgstr "保存"
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Save Changes"
-msgstr ""
+msgstr "保存变更"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Save Changes as a New Layout"
-msgstr ""
+msgstr "将更改另存为新布局"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "Save as Image"
-msgstr ""
+msgstr "另存为图片"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Save as New Layout"
-msgstr ""
+msgstr "另存为新布局"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
 #, python-format
 msgid "Save as PDF"
-msgstr ""
+msgstr "另存为 PDF"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_item_search_view
 msgid "Search Items"
-msgstr ""
+msgstr "搜索项目"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Search fa-icon.."
-msgstr ""
+msgstr "搜索fa-icon.."
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Search through site content"
-msgstr ""
+msgstr "搜索网站内容"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board_defined_filters__display_type__line_section
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#, fuzzy
 msgid "Section"
-msgstr "无法更新章节"
+msgstr "部分"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#, fuzzy
 msgid "Sections"
-msgstr "所有部分"
+msgstr "小节"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2349,248 +2339,247 @@ msgstr "选择"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__ks_dashboard_ninja_id
 #, python-format
 msgid "Select Dashboard"
-msgstr ""
+msgstr "选择看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__ks_dashboard_ninja_ids
 msgid "Select Dashboards"
-msgstr ""
+msgstr "选择看板"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Select Icon"
-msgstr ""
+msgstr "选择图标"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Select Icons"
-msgstr ""
+msgstr "选择图标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_unit_selection
 msgid "Select Unit Type"
-msgstr ""
+msgstr "选择单元类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_selection
 msgid "Select interval of the records to be displayed. "
-msgstr ""
+msgstr "选择要显示的记录的间隔。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_item_theme
 msgid "Select the color theme for the display. "
-msgstr ""
+msgstr "选择显示的颜色主题。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_type
 msgid "Select the desired list view type. "
-msgstr ""
+msgstr "选择所需的列表视图类型。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_sort_by_field
 msgid "Select the desired sorting preference. "
-msgstr ""
+msgstr "选择所需的排序首选项。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_item_color
 msgid "Select the display preference. "
-msgstr ""
+msgstr "选择显示首选项。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_field
 msgid "Select the field for which Date Filter should be applicable."
-msgstr ""
+msgstr "选择应适用日期筛选器的字段。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_font_color
 msgid "Select the font color. "
-msgstr ""
+msgstr "选择字体颜色。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon_color
 msgid "Select the icon to be displayed. "
-msgstr ""
+msgstr "选择要显示的图标。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_item_type
 msgid "Select the required type of dashboard to display. "
-msgstr ""
+msgstr "选择要显示的所需类型的仪表板。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_relation_sub_groupby
 msgid "Select the second level of grouping. "
-msgstr ""
+msgstr "选择第二级分组。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_calculation_type
 msgid "Select the type of calculation you want to perform on the data."
-msgstr ""
+msgstr "选择要对数据执行的计算类型。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_unit_selection
 msgid "Select the unit to be assigned to the value. "
-msgstr ""
+msgstr "选择要分配给值的单位。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_auto_update_type
 msgid "Select the update type."
-msgstr ""
+msgstr "选择更新类型。"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Selected item is duplicated to  ."
-msgstr ""
+msgstr "所选项目将复制到  ."
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Selected item is moved to  ."
-msgstr ""
+msgstr "所选项目将移动到  ."
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_domain_fix.js:0
 #, python-format
 msgid "Selected records"
-msgstr ""
+msgstr "所选记录"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_semi_circle_chart
 msgid "Semi Circle Chart"
-msgstr ""
+msgstr "半圆图"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_defined_filters
 msgid "Separator Name (eg. Order States, Deadlines)"
-msgstr ""
+msgstr "分隔符名称（例如订单状态、截止日期）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__sequence
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "序列"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Set Current Layout"
-msgstr ""
+msgstr "设置当前布局"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Set Update Interval"
-msgstr ""
+msgstr "设置更新间隔"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_unit
 msgid "Show Custom Unit"
-msgstr ""
+msgstr "显示自定义单元"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_data_value
 msgid "Show Data Value"
-msgstr ""
+msgstr "显示数据值"
 
 #. module: ks_dashboard_ninja
 #: model:res.groups,name:ks_dashboard_ninja.ks_dashboard_ninja_group_manager
 msgid "Show Full Dashboard Features"
-msgstr ""
+msgstr "显示完整的仪表板功能"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_hide_legend
 msgid "Show Legend"
-msgstr ""
+msgstr "显示图例"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_live_pop_up
 msgid "Show Live Update Pop Up"
-msgstr ""
+msgstr "显示实时更新弹出窗口"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_records
 msgid "Show Records"
-msgstr ""
+msgstr "显示参记录"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_goal_bar_line
 msgid "Show Target As Line"
-msgstr ""
+msgstr "将目标显示为线条"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_top_menu_id
 msgid "Show Under Menu"
-msgstr ""
+msgstr "在菜单下显示"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_standard_goal_value
 msgid "Show the set target"
-msgstr ""
+msgstr "显示设定的目标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_goal_enable
 msgid "Show the set target."
-msgstr ""
+msgstr "显示设定的目标。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_menu_sequence
 msgid "Smallest sequence give high priority and Highest sequence give low priority"
-msgstr ""
+msgstr "最小序列给予高优先级，最高序列给予低优先级"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Some Items can not be imported Need Dashboard Ninja pro "
-msgstr ""
+msgstr "某些项目无法导入需要Dashboard Ninja pro高级版 "
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_filters.py:0
 #, python-format
 msgid "Something went wrong . Possibly it is due to wrong input type for domain"
-msgstr ""
+msgstr "出了点问题。可能是由于域的输入类型错误"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_sort_by_field
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_sort_by_field
 msgid "Sort By Field"
-msgstr ""
+msgstr "按字段排序"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_sort_by_order
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_sort_by_order
 msgid "Sort Order"
-msgstr ""
+msgstr "排序顺序"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_bar_chart_stacked
 msgid "Stack the columns of the same record. "
-msgstr ""
+msgstr "堆叠同一记录的列。 "
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_bar_chart_stacked
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Stacked Bar Chart"
-msgstr ""
+msgstr "堆叠条形图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_standard_goal_value
 msgid "Standard Target"
-msgstr ""
+msgstr "标准目标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_start_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_start_date
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#, fuzzy
 msgid "Start Date"
 msgstr "开始日期"
 
@@ -2598,25 +2587,25 @@ msgstr "开始日期"
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "Start date must be less than end date"
-msgstr ""
+msgstr "开始日期必须小于结束日期"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Start date should be less than end date"
-msgstr ""
+msgstr "开始日期应小于结束日期"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Sub Group By Date"
-msgstr ""
+msgstr "按日期分组"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Sub Groupby field: {} cannot be aggregated by {}"
-msgstr ""
+msgstr "Sub Groupby 字段: {} 无法由 {} 聚合"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2624,9 +2613,9 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_data_count_type__sum
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_record_count_type_2__sum
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_record_count_type__sum
-#, fuzzy, python-format
+#, python-format
 msgid "Sum"
-msgstr "任务有效持续时间的总和"
+msgstr "求和"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
@@ -2636,12 +2625,12 @@ msgstr "目标"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_goal_lines
 msgid "Target Lines"
-msgstr ""
+msgstr "目标详情"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Task Lines"
-msgstr ""
+msgstr "任务详情"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
@@ -2651,32 +2640,32 @@ msgstr "任务"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__display_type
 msgid "Technical field for UX purpose."
-msgstr ""
+msgstr "用于用户体验的技术领域。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_template_type
 msgid "Template Format"
-msgstr ""
+msgstr "模板格式"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_dashboard_item_ids
 msgid "Template Type"
-msgstr ""
+msgstr "模板类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__name
 msgid "The item will be represented by this unique name."
-msgstr ""
+msgstr "该项目将由该唯一名称表示。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_item_theme
 msgid "Theme"
-msgstr ""
+msgstr "主题"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_client_action
 msgid "This Action will be Performed at the end of Drill Down Action"
-msgstr ""
+msgstr "此操作将在向下搜索操作结束时执行"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2684,9 +2673,9 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__t_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__t_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_month
-#, fuzzy, python-format
+#, python-format
 msgid "This Month"
-msgstr "按月"
+msgstr "本月"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2696,7 +2685,7 @@ msgstr "按月"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_quarter
 #, python-format
 msgid "This Quarter"
-msgstr ""
+msgstr "本季度"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2704,9 +2693,9 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__t_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__t_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_week
-#, fuzzy, python-format
+#, python-format
 msgid "This Week"
-msgstr "在星期"
+msgstr "本周"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2714,27 +2703,30 @@ msgstr "在星期"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__t_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__t_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_year
-#, fuzzy, python-format
+#, python-format
 msgid "This Year"
-msgstr "根据年"
+msgstr "本年"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_records
 msgid ""
 "This field Enable the click on \n"
-"                                                                                  Dashboard Items to "
-"view the Odoo \n"
-"                                                                                  default view of records"
+"                                                                                  Dashboard "
+"Items to view the Odoo \n"
+"                                                                                  default "
+"view of records"
 msgstr ""
-"此字段启用单击以 \n"
-"                                                                                  查看系统的仪表板 \n"
-"                                                                                  默认记录视图"
+"此字段启用点击 \n"
+"                                                                                  用于查看"
+"Odoo的仪表板项目 \n"
+"                                                                                  记录的默认"
+"视图"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "This file is not supported"
-msgstr ""
+msgstr "该文件不支持"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2742,12 +2734,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_tile
 #, python-format
 msgid "Tile"
-msgstr ""
+msgstr "切片"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_format
 msgid "To Change the number format showing in chart to given option"
-msgstr ""
+msgstr "将图表中显示的数字格式更改为给定选项"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2760,24 +2752,24 @@ msgstr "待办事项"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_to_do_data
 msgid "To Do Data in JSon"
-msgstr ""
+msgstr "待办事项JSON数据"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_to_do_preview
 msgid "To Do Preview"
-msgstr ""
+msgstr "待办事项预览"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "To add dashboard item, use"
-msgstr ""
+msgstr "要添加仪表板项目，请使用"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_data_limit_visibility
 msgid "To enable the record data limit field"
-msgstr ""
+msgstr "启用记录数据范围字段"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2787,12 +2779,12 @@ msgstr ""
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_day
 #, python-format
 msgid "Today"
-msgstr "今天"
+msgstr "今日"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_button_color
 msgid "Top Button Color"
-msgstr ""
+msgstr "顶部按钮颜色"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
@@ -2802,29 +2794,29 @@ msgstr "类型"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_count_type
 msgid "Type of record how record will show as count,sum and average of the record"
-msgstr ""
+msgstr "记录类型记录将如何显示为记录的计数、总和和平均值"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_list_view_type__ungrouped
 msgid "Un-Grouped"
-msgstr ""
+msgstr "未分组"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Unarchive"
-msgstr "取消归档"
+msgstr "解档"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_set_interval
 msgid "Update Interval for new items only"
-msgstr ""
+msgstr "仅新项目的更新间隔"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_auto_update_type__ks_live_update
 msgid "Update at every instance."
-msgstr ""
+msgstr "在每个实例上更新。"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2832,93 +2824,90 @@ msgstr ""
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_icon
 #, python-format
 msgid "Upload Icon"
-msgstr ""
+msgstr "上传图标"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Uploading..."
-msgstr ""
+msgstr "上传中..."
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__ks_goal_value
-#, fuzzy
 msgid "Value"
 msgstr "值"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_target_view
 msgid "View"
-msgstr "查看"
+msgstr "视图"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_tree
 msgid "View Items"
-msgstr ""
+msgstr "视图元素"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__warm
 msgid "Warm"
-msgstr ""
+msgstr "温暖"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_sub_groupby__week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_item_action_date_groupby__week
-#, fuzzy
 msgid "Week"
-msgstr "在星期"
+msgstr "星期"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_sub_groupby__year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_item_action_date_groupby__year
-#, fuzzy
 msgid "Year"
-msgstr "根据年"
+msgstr "年"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Your personal dashboard is empty"
-msgstr ""
+msgstr "您的个人仪表板为空"
 
 #. module: ks_dashboard_ninja
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "if target lines is selected then cannot be set pagination value"
-msgstr ""
+msgstr "如果选择了目标行，则不能设置分页值"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_target_deviation_field
 msgid "list_field_id"
-msgstr ""
+msgstr "list_field_id"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "on top right corner."
-msgstr ""
+msgstr "在右上角。"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
 #, python-format
 msgid "or"
-msgstr ""
+msgstr "或"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_to_do_description
 msgid "to do description"
-msgstr ""
+msgstr "待办描述"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_to_do_headers
 msgid "to do headers"
-msgstr ""
+msgstr "待办上部"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2926,7 +2915,7 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "vs Prev"
-msgstr ""
+msgstr "与上一个"
 
 #. module: ks_dashboard_ninja
 #. openerp-web
@@ -2934,9 +2923,11 @@ msgstr ""
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "vs Target"
-msgstr ""
+msgstr "与目标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_export_all_records
-msgid "when click on boolean button, all the records will be downloaded which are present in entire list"
-msgstr "点击布尔按钮后，将下载整个列表中的所有记录"
+msgid ""
+"when click on boolean button, all the records will be downloaded which are present in "
+"entire list"
+msgstr "当单击布尔按钮时，将下载整个列表中的所有记录"
