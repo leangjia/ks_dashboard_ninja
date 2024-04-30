@@ -4,12 +4,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 14.0\n"
+"Project-Id-Version: Odoo Server 17.0+e-20231113\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-26 14:51+0000\n"
-"PO-Revision-Date: 2024-04-30 21:21+0800\n"
-"Last-Translator: 老天@odoo123.com\n"
-"Language-Team: 开源之家\n"
+"POT-Creation-Date: 2024-04-30 13:27+0000\n"
+"PO-Revision-Date: 2024-04-30 22:08+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -21,8 +21,7 @@ msgstr ""
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_dashboard_board_id
 msgid ""
 "\n"
-"        Items Configuration and their position in the dashboard will be copied from the "
-"selected dashboard \n"
+"        Items Configuration and their position in the dashboard will be copied from the selected dashboard \n"
 "        and will be saved as template.\n"
 "    "
 msgstr ""
@@ -35,11 +34,6 @@ msgstr ""
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_previous_period
 msgid " Compare With Previous Period "
 msgstr " 与上一期间比较 "
-
-#. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_update_items_data
-msgid " Data will be refreshed after the selected interval."
-msgstr " 数据将在所选时间间隔后刷新。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_relation_groupby
@@ -57,6 +51,13 @@ msgid " Display value on the graph. . "
 msgstr " 在图形上显示值. . "
 
 #. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
+#, python-format
+msgid " Negative periods are not allowed "
+msgstr " 不允许出现负周期 "
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_pastwithout_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_pastwithout_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_pastwithout_now
@@ -65,9 +66,7 @@ msgstr " 今天之前不含今天"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_compare_period
-msgid ""
-" Provide the number of Date Filter Selection you want to include while displaying the "
-"record."
+msgid " Provide the number of Date Filter Selection you want to include while displaying the record."
 msgstr " 提供您希望在显示记录时包含的日期筛选器选择数量。"
 
 #. module: ks_dashboard_ninja
@@ -76,8 +75,7 @@ msgid " Records to be displayed on the graph"
 msgstr " 要在图形上显示的记录"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_background_color
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_header_bg_color
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_background_color model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_header_bg_color
 msgid " Select the background color with transparency. "
 msgstr " 选择具有透明度的背景色。 "
 
@@ -107,64 +105,129 @@ msgid " Sub Group By"
 msgstr " 分组依据"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_auto_update_type__ks_update_interval
-msgid " Update after the selected interval"
-msgstr " 在选定的间隔后更新"
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0
+#, python-format
+msgid "%s model does not exist.Please install"
+msgstr "%s 模型不存在。请安装"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "(ev)=>self.kslayout(ev)"
+msgstr "(ev)=>self.kslayout(ev)"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__60000
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__60000
 msgid "1 minute"
 msgstr "1 分钟"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__600000
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__600000
 msgid "10 minute"
 msgstr "10 分钟"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__15000
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__15000
 msgid "15 Seconds"
 msgstr "15 秒"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__120000
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__120000
 msgid "2 minute"
 msgstr "2 分钟"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__30000
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__30000
 msgid "30 Seconds"
 msgstr "30 秒"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__45000
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__45000
 msgid "45 Seconds"
 msgstr "45 秒"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_set_interval__300000
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_update_items_data__300000
 msgid "5 minute"
-msgstr "5分钟"
+msgstr "5 分钟"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
-"                                        You can find all items related to Dashboard Here.</"
-"p>\n"
+"                                        You can find all items related to Dashboard Here.</p>\n"
 "                                    "
 msgstr ""
 "<p class=\"o_view_nocontent_smiling_face\">\n"
-"                                        您可以在这里找到与“仪表板”相关的所有项目。</p>\n"
+"                                        您可以在这里找到与“仪表板”相关的所有内容。</p>\n"
 "                                    "
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid ""
+"<span name=\"ks_excel_span\" style=\"font-style: italic; color: #888888;\" invisible=\"ks_data_calculation_type == 'query' or data_source == 'odoo' or data_source == False  or "
+"(ks_dashboard_item_type not in                                                         "
+"['ks_kpi','ks_radar_view','ks_flower_view','ks_tile','ks_bar_chart','ks_horizontalBar_chart','ks_line_chart','ks_area_chart','ks_pie_chart',                                                         "
+"'ks_doughnut_chart','ks_polarArea_chart','ks_scatter_chart','ks_list_view','ks_funnel_chart','ks_bullet_chart','ks_radialBar_chart'])\">\n"
+"                                        **File names should not contain any special characters. File name can have\n"
+"                                        Spaces or separated by Underscores(_).\n"
+"                                    </span>"
+msgstr ""
+"<span name=\"ks_excel_span\" style=\"font-style: italic; color: #888888;\" invisible=\"ks_data_calculation_type == 'query' or data_source == 'odoo' or data_source == False  or "
+"(ks_dashboard_item_type not in                                                         "
+"['ks_kpi','ks_radar_view','ks_flower_view','ks_tile','ks_bar_chart','ks_horizontalBar_chart','ks_line_chart','ks_area_chart','ks_pie_chart',                                                         "
+"'ks_doughnut_chart','ks_polarArea_chart','ks_scatter_chart','ks_list_view','ks_funnel_chart','ks_bullet_chart','ks_radialBar_chart'])\">\n"
+"                                        **文件名不得包含任何特殊字符。文件名可以有\n"
+"                                        空格或用 Underscores(_) 分隔。\n"
+"                                    </span>"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid ""
+"<span name=\"ks_sort_span\" style=\"font-style: italic; color: #888888;\" invisible=\"(ks_dashboard_item_type == 'ks_scatter_chart')or(ks_dashboard_item_type == "
+"'ks_map_view')or(ks_dashboard_item_type == 'ks_flower_view')or(ks_fill_temporal == True)or((ks_dashboard_item_type == 'ks_funnel_chart') or ((ks_goal_lines != [])and(ks_goal_enable == True)))\">\n"
+"                                                    **Field in sort by column must match atleast one field given in\n"
+"                                                    measures column.\n"
+"                                                </span>"
+msgstr ""
+"<span name=\"ks_sort_span\" style=\"font-style: italic; color: #888888;\" invisible=\"(ks_dashboard_item_type == 'ks_scatter_chart')or(ks_dashboard_item_type == "
+"'ks_map_view')or(ks_dashboard_item_type == 'ks_flower_view')or(ks_fill_temporal == True)or((ks_dashboard_item_type == 'ks_funnel_chart') or ((ks_goal_lines != [])and(ks_goal_enable == True)))\">\n"
+"                                                    ** 排序列中的字段必须至少与测量列中的一个字段匹配。\n"
+"                                                    措施栏中的字段。\n"
+"                                                </span>"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+msgid "<span>Generate items with AI</span>"
+msgstr "<span>使用AI生成项目</span>"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "<span>Preview</span>"
+msgstr "<span>上一个</span>"
+
+#. module: ks_dashboard_ninja
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.ks_dashboard_ninja_ai_action model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_ai_dashboard
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_arti_int model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_ai_whole_dashboard_form_view
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+msgid "AI Dashboard"
+msgstr "AI 看板"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0 code:addons/ks_dashboard_ninja/models/ks_ai_whole_dashboard.py:0
+#, python-format
+msgid "AI Responds with the following status:- %s"
+msgstr "AI以以下状态响应：- %s"
+
+#. module: ks_dashboard_ninja
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.ks_dashboard_ninja_ai_dashboardaction
+msgid "AI whole Dashboard"
+msgstr "AI全看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__ks_action
@@ -182,21 +245,25 @@ msgid "Action Lines"
 msgstr "动作详情"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Action field: {} cannot be aggregated by {}"
 msgstr "动作字段: {} 无法由 {} 聚合"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_actions
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_action_item_name
+msgid "Action item name"
+msgstr "动作项目名称"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_actions model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Actions"
 msgstr "动作"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_active
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_is_active
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_is_active model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Active"
 msgstr "激活"
 
@@ -206,14 +273,7 @@ msgid "Active Description"
 msgstr "动作描述"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#, python-format
-msgid "Add"
-msgstr "添加"
-
-#. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Add Item"
@@ -230,8 +290,8 @@ msgid "Add a Section"
 msgstr "添加小节"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Add a condition"
 msgstr "添加条件"
@@ -247,7 +307,7 @@ msgid "Add a separator"
 msgstr "添加分隔符"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Add button"
@@ -259,14 +319,23 @@ msgid "Advance Configuration"
 msgstr "高级配置"
 
 #. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-msgid ""
-"All Target Lines Changes Will be reflected on Chart after saving the record and pagination "
-"will be ignore ."
-msgstr "保存记录后，所有目标行更改都将反映在图表上，分页将被忽略。"
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
+msgid "Advance Settings"
+msgstr "高级设置"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid ""
+"All Target Lines Changes Will be reflected on Chart after saving the record\n"
+"                                            and\n"
+"                                            pagination will be ignore ."
+msgstr ""
+"保存记录后，所有目标行更改都将反映在图表上\n"
+"                                            且\n"
+"                                            分页将被忽略。"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_none
 #, python-format
@@ -274,56 +343,75 @@ msgid "All Time"
 msgstr "全部时间"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
-#, python-format
-msgid "All items can not be Imported"
-msgstr "无法导入所有项目"
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board__multi_layouts
+msgid "Allow user to have multiple layouts of the same Dashboard"
+msgstr "允许用户拥有同一仪表板的多个布局"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
 #, python-format
 msgid "Apply"
 msgstr "应用"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_multiplier_active
+msgid "Apply Multiplier"
+msgstr "应用乘数"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Archive"
 msgstr "归档"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Are you sure that you want to archive all the selected records?"
 msgstr "是否确实要存档所有选定的记录？"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#, python-format
+msgid "Are you sure that you want to remove this item?"
+msgstr "您确定要删除此项目吗？"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0 model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_delete_dashboard_wizard_form
+#, python-format
+msgid "Are you sure you want to delete this dashboard ?"
+msgstr "是否确实要删除此仪表板？"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
 #, python-format
 msgid "Are you sure you want to remove this item?"
 msgstr "是否确实要删除此项目？"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
 #, python-format
 msgid "Are you sure you want to remove this task?"
 msgstr "是否确实要删除此任务？"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_area_chart
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_area_chart
-#, python-format
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_15
 msgid "Area Chart"
 msgstr "面积图"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_23
+msgid "Area Chart with data values"
+msgstr "带数据值的面积图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_sort_by_order__asc
@@ -332,21 +420,16 @@ msgid "Ascending"
 msgstr "升序"
 
 #. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
 msgid "Auto Update"
 msgstr "自动更新"
-
-#. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_auto_update_type
-msgid "Auto Update Type"
-msgstr "自动更新类型"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_data_count_type__average
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_record_count_type_2__average
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_record_count_type__average
 msgid "Average"
-msgstr "平均"
+msgstr "平均值"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_background_color
@@ -354,18 +437,16 @@ msgid "Background Color"
 msgstr "背景颜色"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_bar_chart
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_bar_chart
-#, python-format
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_5
 msgid "Bar Chart"
 msgstr "柱状图"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model,name:ks_dashboard_ninja.model_base
-msgid "Base"
-msgstr "基础"
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_20
+msgid "Bar Chart With Data Values"
+msgstr "带数据值的条形图"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
@@ -373,38 +454,69 @@ msgid "Below action will be performed at the end of the Drill Down Action"
 msgstr "以下操作将在向下搜索操作结束时执行"
 
 #. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_action
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Beta"
+msgstr "Beta"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__board_type
+msgid "Board Type"
+msgstr "看板类型"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_bullet_chart
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_bullet_chart
+msgid "Bullet Chart"
+msgstr "Bullet 图表"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_bullet_preview model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Bullet Preview"
+msgstr "Bullet 预览"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__data_source__csv
+msgid "CSV"
+msgstr "CSV"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__csv_bool
+msgid "CSV Bool"
+msgstr "CSV Bool"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_ai_whole_dashboard_form_view model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_create_dashboard_wizard_form
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_action model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_delete_dashboard_wizard_form model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_duplicate_dashboard_wizard_form
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_fetch_key_form_view model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_import_dashboard_form_view
 msgid "Cancel"
 msgstr "取消"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
-msgid ""
-"Cannot create target lines when Group By Date field is set to have aggregation in Minute "
-"and Hour case."
+msgid "Cannot create target lines when Group By Date field is set to have aggregation in Minute and Hour case."
 msgstr "当“按日期分组”字段设置为在“分钟和小时”情况下具有聚合时，无法创建目标行。"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
-msgid ""
-"Cannot set aggregation having Date time (Hour, Minute) when target lines per date are being "
-"used. To proceed this, first delete target lines"
-msgstr ""
-"使用每个日期的目标行时，无法设置具有日期时间（小时，分钟）的聚合。 为此，请先删除目标行"
+msgid "Cannot set aggregation having Date time (Hour, Minute) when target lines per date are being used. To proceed this, first delete target lines"
+msgstr "使用按照日期显示的目标行时，无法设置具有日期时间（小时，分钟）的聚合。 为此，请先删除目标行"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_tile/ks_tile.xml:0
 #, python-format
-msgid ""
-"Changing Layout midway will set the default icon colour and font colour for selected layout."
-msgstr "中途更改布局将为所选布局设置默认的图标颜色和字体颜色。"
+msgid "Changing Layout midway will set the default icon colour and font colour for selected layout."
+msgstr "中途更改布局将设置所选布局的默认图标颜色和字体颜色。"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_item_color
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_item_color model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Chart Color Palette"
 msgstr "图表调色板"
 
@@ -414,16 +526,14 @@ msgid "Chart Data in string form"
 msgstr "字符串形式的图表数据"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_live_pop_up
-msgid "Checkbox to enable notification after every update. "
-msgstr "勾选表示每次更新后启用通知。. "
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_previous_period
+msgid "Checkbox to show comparison between the data of present day and the previous selected period. "
+msgstr "复选框，用于显示当前数据与上一选定时段数据的比较。 "
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_previous_period
-msgid ""
-"Checkbox to show comparison between the data of present day and the previous selected "
-"period. "
-msgstr "复选框，用于显示当前数据与上一选定时段数据的比较。 "
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_child_board__board_type__child
+msgid "Child"
+msgstr "子级"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_icon_select
@@ -431,9 +541,8 @@ msgid "Choose the Icon option. "
 msgstr "选择“图标”选项。 "
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_image_widget.xml:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Clear"
 msgstr "清空"
@@ -449,9 +558,9 @@ msgid "Client Item Action"
 msgstr "客户端项目动作"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/editdialog.xml:0 code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_icon_dialog.xml:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
 #, python-format
 msgid "Close"
 msgstr "关闭"
@@ -462,23 +571,45 @@ msgid "Colombian Peso Format"
 msgstr "哥伦比亚比索格式"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0
 #, python-format
 msgid "Color Palette"
 msgstr "调色板"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Column Data Type"
+msgstr "列数据类型"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Coming Soon in Future :)"
 msgstr "未来即将推出：）"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_company_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__company_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_company_id model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.child_board_tree
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Company"
 msgstr "公司"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0
+#, python-format
+msgid "Company:"
+msgstr "公司："
+
+#. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_res_config_settings
+msgid "Config Settings"
+msgstr "配置设定"
 
 #. module: ks_dashboard_ninja
 #: model:ir.ui.menu,name:ks_dashboard_ninja.configuration_menu
@@ -486,9 +617,11 @@ msgid "Configuration"
 msgstr "配置"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__cool
-msgid "Cool"
-msgstr "酷"
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Configure this dashboard"
+msgstr "配置此看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_data_count_type__count
@@ -503,32 +636,93 @@ msgid "Count..."
 msgstr "计数..."
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_country_id
+msgid "Country"
+msgstr "国家"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_country_code
+msgid "Country Code"
+msgstr "国家代码"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.ks_create_dashboard_wizard
+#, python-format
+msgid "Create Dashboard"
+msgstr "创建看板"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Create Table"
+msgstr "创建表格"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Create a New Dashboard"
+msgstr "创建一个新的看板"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Create new chart"
+msgstr "创建新的图表"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_delete_wizard__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_duplicate_wizard__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_kpi_mail__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__create_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__create_uid
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__create_uid
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__create_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__create_uid model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__create_uid
 msgid "Created by"
 msgstr "创建人"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_delete_wizard__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_duplicate_wizard__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_kpi_mail__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__create_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__create_date
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__create_date
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__create_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__create_date model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__create_date
 msgid "Created on"
 msgstr "创建时间"
 
@@ -539,10 +733,16 @@ msgstr "累计为行"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_cumulative_field
-msgid "Cumulative Field"
+msgid "Cumulative Fields"
 msgstr "累计字段"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_currency_id
+msgid "Currency"
+msgstr "货币"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "Current Json File is not properly formatted according to Dashboard Ninja Model."
@@ -550,14 +750,15 @@ msgstr "根据Dashboard Ninja模型，当前Json文件的格式不正确。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board_template__ks_template_type__ks_custom
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_icon_select__custom
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_unit_selection__custom
 msgid "Custom"
 msgstr "自定义"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_custom
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_custom
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_custom
@@ -576,31 +777,50 @@ msgid "Custom Query"
 msgstr "自定义查询"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Customize Dashboard"
 msgstr "自定义看板"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_tile/ks_tile.xml:0
 #, python-format
 msgid "Customize Item"
 msgstr "自定义项目"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__dark
+msgid "Dark"
+msgstr "暗黑"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__ks_dashboard_board_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_dashboard_board_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_dashboard_board_id
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_ninja_board_id
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.child_board_tree
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_ninja_board_id model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.child_board_tree
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item
 msgid "Dashboard"
 msgstr "看板"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_res_config_settings__dn_api_key
+msgid "Dashboard AI API Key"
+msgstr "看板 AI API Key"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.res_config_settings_inherit_view
+msgid "Dashboard API Key"
+msgstr "看板 API Key"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_wizard
+msgid "Dashboard Creation Wizard"
+msgstr "看板创建向导"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_custom_filters_ids
@@ -613,6 +833,18 @@ msgid "Dashboard Defined Filter"
 msgstr "仪表板定义的筛选器"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_delete_wizard
+msgid "Dashboard Delete Wizard"
+msgstr "看板删除向导"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_duplicate_wizard
+msgid "Dashboard Duplicate Wizard"
+msgstr "看板复制向导"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__ks_dashboard_csv_group_by_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__ks_dashboard_item_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_dashboard_item_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__ks_dashboard_item
 msgid "Dashboard Item"
@@ -634,13 +866,18 @@ msgid "Dashboard Item Chart Sub Group By Type"
 msgstr "仪表板项目图表子组（按类型）"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__ks_dashboard_group_by_id
+msgid "Dashboard Item Id"
+msgstr "看板项目 Id"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_item_type
 msgid "Dashboard Item Type"
 msgstr "看板项目类型"
 
 #. module: ks_dashboard_ninja
-#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
-#: model:ir.actions.act_window,name:ks_dashboard_ninja.item_action_window
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0 model:ir.actions.act_window,name:ks_dashboard_ninja.item_action_window
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_items_ids
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__ks_dashboard_item_ids
 #, python-format
@@ -658,12 +895,14 @@ msgid "Dashboard Layouts"
 msgstr "看板布局"
 
 #. module: ks_dashboard_ninja
-#: model:ir.actions.act_window,name:ks_dashboard_ninja.board_form_tree_action_window
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.board_form_tree_action_window model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_create_dashboard_wizard_form
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_delete_dashboard_wizard_form model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_duplicate_dashboard_wizard_form
 msgid "Dashboard Manager"
 msgstr "看板管理员"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__ks_dash_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__name model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__name
 msgid "Dashboard Name"
 msgstr "看板名称"
 
@@ -671,6 +910,11 @@ msgstr "看板名称"
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_board
 msgid "Dashboard Ninja"
 msgstr "忍者看板"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.res_config_settings_inherit_view
+msgid "Dashboard Ninja Api Key"
+msgstr "忍者看板 Api Key"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_child_board
@@ -688,6 +932,11 @@ msgid "Dashboard Ninja Defined Filters"
 msgstr "定义的过滤器"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_csv_group_by model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_group_by
+msgid "Dashboard Ninja Group By"
+msgstr "忍者看板分组依据"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_ninja_dashboard_item_action
 msgid "Dashboard Ninja Item Actions"
 msgstr "项目动作"
@@ -701,6 +950,21 @@ msgstr "项目动作详情"
 #: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_item_goal
 msgid "Dashboard Ninja Items Goal Lines"
 msgstr "项目目标详情"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_item_multiplier
+msgid "Dashboard Ninja Items Multiplier Lines"
+msgstr "忍者看板项目乘法线"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_kpi_mail
+msgid "Dashboard Ninja Kpi mail"
+msgstr "忍者看板 Kpi mail"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_csv_new model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_new
+msgid "Dashboard Ninja New"
+msgstr "忍者看板新建"
 
 #. module: ks_dashboard_ninja
 #: model:ir.module.category,name:ks_dashboard_ninja.ks_dashboard_ninja_security_groups
@@ -723,10 +987,17 @@ msgid "Dashboard Predefined Filters"
 msgstr "仪表板预定义筛选器"
 
 #. module: ks_dashboard_ninja
-#: model:ir.actions.act_window,name:ks_dashboard_ninja.template_tree_action_window
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Dashboard Setting"
+msgstr "看板设置"
+
+#. module: ks_dashboard_ninja
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.template_tree_action_window model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__ks_template
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_default_template
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dashboard_board_template_id
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_template_form
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__ks_template model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_template_form
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_template_tree
 msgid "Dashboard Template"
 msgstr "模板模板"
@@ -737,8 +1008,7 @@ msgid "Dashboard layout"
 msgstr "看板布局"
 
 #. module: ks_dashboard_ninja
-#: model:ir.ui.menu,name:ks_dashboard_ninja.dashboard_menu
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
+#: model:ir.ui.menu,name:ks_dashboard_ninja.dashboard_menu model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_form
 msgid "Dashboards"
 msgstr "看板"
 
@@ -773,6 +1043,16 @@ msgid "Data Points displayed with a line in the graph. "
 msgstr "在图形中用线状显示的数据点。 "
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__data_source model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Data Source"
+msgstr "数据源"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_as_of_now
+msgid "Data Till Now"
+msgstr "迄今为止的数据"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_data_count_type
 msgid "Data Type"
 msgstr "数据类型"
@@ -784,9 +1064,11 @@ msgid "Data points to be selected."
 msgstr "要选择的数据点。"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__ks_model_id
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__ks_import_model_id
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__ks_import_model model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__ks_import_model_id
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__ks_model_id
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_model_id
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_id
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_model_id model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_id
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_model_id
 msgid "Data source to fetch and read the data for the creation of dashboard items. "
 msgstr "数据源，用于获取和读取用于创建仪表板项的数据。 "
@@ -797,21 +1079,20 @@ msgid "Date"
 msgstr "日期"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Date Filter"
 msgstr "日期筛选器"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_field
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_field model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Date Filter Field"
 msgstr "日期筛选字段"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_selection
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_selection model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Date Filter Selection"
 msgstr "日期筛选器选择"
 
@@ -823,11 +1104,14 @@ msgid "Day"
 msgstr "日"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_child_board__board_type__default
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__default
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_icon_select__default
 msgid "Default"
 msgstr "默认"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "Default Dashboard can't be deleted."
@@ -837,13 +1121,6 @@ msgstr "无法删除默认仪表板。"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_date_filter_selection
 msgid "Default Date Filter"
 msgstr "默认日期筛选器"
-
-#. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
-#, python-format
-msgid "Default Icons"
-msgstr "默认图标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_calculation_type__custom
@@ -861,18 +1138,29 @@ msgid "Define conditions for filter to write manually"
 msgstr "定义过滤器手动写入的条件"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_domain
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_domain model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain
 msgid "Define conditions for filter. "
 msgstr "定义筛选器的条件。 "
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_delete_dashboard_wizard_form
 #, python-format
 msgid "Delete"
 msgstr "删除"
+
+#. module: ks_dashboard_ninja
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.ks_delete_dashboard_wizard
+msgid "Delete Dashboard"
+msgstr "删除看板"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Delete this dashboard"
+msgstr "删除此看板"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_sort_by_order__desc
@@ -891,15 +1179,19 @@ msgid "Deviation Field"
 msgstr "偏差字段"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_quick_edit_view.xml:0
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_precision_digits
+msgid "Digits"
+msgstr "位数"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_quick_edit_view.xml:0
 #, python-format
 msgid "Discard"
 msgstr "丢弃"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Discard Changes"
@@ -911,17 +1203,29 @@ msgid "Display"
 msgstr "显示"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_delete_wizard__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_duplicate_wizard__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_kpi_mail__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__display_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__display_name
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__display_name
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__display_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__display_name model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__display_name
 msgid "Display Name"
 msgstr "显示名称"
 
@@ -931,20 +1235,23 @@ msgid "Display Type"
 msgstr "显示类型"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_as_of_now
+msgid "Display the total sum of each legends as it grows with times"
+msgstr "显示每个图例随时间增长的总和"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_unit
 msgid "Display the unit of the data."
 msgstr "显示数据的单位。"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_domain
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Domain"
 msgstr "域"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_extension
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_domain_extension model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Domain Extension"
 msgstr "域扩展"
 
@@ -960,51 +1267,93 @@ msgid "Domain Substitute"
 msgstr "域替换"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_filters.py:0
 #, python-format
 msgid "Domain can not be empty"
 msgstr "域不能为空"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_doughnut_chart
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_doughnut_chart
-#, python-format
 msgid "Doughnut Chart"
 msgstr "环状图"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#, python-format
-msgid "Drill Up"
-msgstr "向上钻取"
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_11
+msgid "Doughnut chart"
+msgstr "圆环图"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
-#: model:ir.actions.server,name:ks_dashboard_ninja.ks_duplicate_dashboard
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_25
+msgid "Doughnut semi circle"
+msgstr "半圆环图"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 model:ir.actions.server,name:ks_dashboard_ninja.ks_duplicate_dashboard
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_ninja_dashboard_item_action__ks_action__duplicate
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_duplicate_dashboard_wizard_form
 #, python-format
 msgid "Duplicate"
 msgstr "重复"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.ks_duplicate_dashboard_wizard
+msgid "Duplicate Dashboard"
+msgstr "复制看板"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Duplicate current Dashboard"
+msgstr "复制当前看板"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Edit Layout"
 msgstr "编辑布局"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
 #, python-format
 msgid "Edit Task"
 msgstr "编辑任务"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/res_settings.py:0
+#, python-format
+msgid "Either you have entered wrong URL path or there is some problem in sending request. If you need assistance, feel free to contact at sales@ksolves.com"
+msgstr "可能是您输入了错误的 URL 路径，也可能是发送请求时出现了问题。如果您需要帮助，请随时通过 sales@ksolves.com 与我们联系"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_email_to_ids
+msgid "Email Address"
+msgstr "Email地址"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__ks_email_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_res_config_settings__ks_email_id model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.res_config_settings_inherit_view
+msgid "Email ID"
+msgstr "Email ID"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_kpi_mail__name
+msgid "Email To:"
+msgstr "Email To:"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__multi_layouts
+msgid "Enable Multi-Dashboard Layouts"
+msgstr "启用多面板布局"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_goal_enable
@@ -1013,8 +1362,7 @@ msgstr "启用目标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_end_date
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_end_date
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_end_date model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "End Date"
 msgstr "结束日期"
 
@@ -1024,9 +1372,28 @@ msgid "English Format"
 msgstr "英文格式"
 
 #. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+msgid "Enter Model"
+msgstr "输入模型"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_unit
 msgid "Enter Unit"
 msgstr "输入单位"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0
+#, python-format
+msgid "Enter the input keywords to render the item"
+msgstr "输入输入关键字以呈现项目"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_key_fetch.py:0
+#, python-format
+msgid "Error generates with following status %s"
+msgstr "生成错误，状态如下 %s"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_data_formatting__exact
@@ -1039,11 +1406,21 @@ msgid "Exact Value"
 msgstr "精确值"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__data_source__excel
+msgid "Excel"
+msgstr "Excel"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__excel_bool
+msgid "Excel Bool"
+msgstr "Excel Bool"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Export"
 msgstr "导出"
@@ -1054,63 +1431,80 @@ msgid "Export All Records"
 msgstr "导出所有记录"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0
 #, python-format
 msgid "Export Chart"
 msgstr "导出图表"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Export Dashboard"
 msgstr "导出看板"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0
 #, python-format
 msgid "Export Item"
 msgstr "导出项目"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0
 #, python-format
 msgid "Export List"
 msgstr "导出列表"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
 #, python-format
 msgid "Export to CSV"
 msgstr "导出CSV"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
 #, python-format
 msgid "Export to Excel"
 msgstr "导出Excel"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.ks_fetch_key model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_fetch_key
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_fetch_key_form_view
+msgid "Fetch API key"
+msgstr "获取API密钥"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_fetch_key_form_view
+msgid "Fetch Key"
+msgstr "获取密钥"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
 #, python-format
 msgid "Fields Required : Name, Model, Icon (Default or Custom Upload), Layout"
 msgstr "必填字段：名称、型号、图标（默认或自定义上载）、布局"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_fields
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_view_fields model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Fields to show in list"
 msgstr "要在列表中显示的字段"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__filename
+msgid "Filename"
+msgstr "文件名"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_fill_temporal
@@ -1118,9 +1512,8 @@ msgid "Fill Temporal Value"
 msgstr "填充时间值"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0 model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #, python-format
 msgid "Filter"
 msgstr "筛选"
@@ -1132,8 +1525,19 @@ msgid "Filter Label"
 msgstr "筛选标签"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_flower_view_preview
+msgid "Flower Preview"
+msgstr "关注者预览"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_flower_view
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_flower_view
+msgid "Flower View"
+msgstr "关注者视图"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_icon_dialog.xml:0
 #, python-format
 msgid "Font Awesome 4.7.0"
 msgstr "棒棒字体 4.7.0"
@@ -1149,15 +1553,32 @@ msgid "Format"
 msgstr "格式"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_quick_edit_view.xml:0
 #, python-format
 msgid "Full Settings"
 msgstr "完整设置"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_funnel_chart
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_funnel_chart
+msgid "Funnel Chart"
+msgstr "漏斗图"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_funnel_preview
+msgid "Funnel Preview"
+msgstr "漏斗预览"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_funnel_record_field
+msgid "Funnel Record Field"
+msgstr "漏斗记录字段"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_future_starting_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_future_starting_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_future_starting_now
@@ -1166,14 +1587,83 @@ msgid "Future Starting Now"
 msgstr "未来从现在开始"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_futurestarting_tomorrow
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_futurestarting_tomorrow
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_futurestarting_tomorrow
 #, python-format
 msgid "Future Starting Tomorrow"
 msgstr "从明天开始的未来"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Generate Dashboard with AI"
+msgstr "使用AI生成仪表板"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+msgid "Generate Item"
+msgstr "生成项目"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_ai_keyword/ks_ai_keyword.xml:0
+#, python-format
+msgid "Generate With AI"
+msgstr "使用AI生成"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_ai_whole_dashboard_form_view
+msgid "Generate dashboard with AI"
+msgstr "使用AI生成仪表板"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#, python-format
+msgid "Generate items with AI"
+msgstr "使用AI生成项目"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
+#, python-format
+msgid "Generate items with AI button"
+msgstr "使用AI按钮生成项目"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+msgid "Generate with"
+msgstr "使用生成"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0 model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+#, python-format
+msgid "Generate with AI"
+msgstr "使用AI生成"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__ks_api_key
+msgid "Generated AI API Key"
+msgstr "生成 AI API Key"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.res_config_settings_inherit_view
+msgid "Get API key"
+msgstr "获取API密钥"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
+#, python-format
+msgid "Getting invalid response from AI, please try again"
+msgstr "收到AI的无效响应，请重试"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__sequence
@@ -1201,26 +1691,34 @@ msgid "Group Access"
 msgstr "群组访问权限"
 
 #. module: ks_dashboard_ninja
+#: model:ir.actions.act_window,name:ks_dashboard_ninja.action_group_by model:ir.actions.act_window,name:ks_dashboard_ninja.csv_action_group_by
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_relation_groupby
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_is_scatter_group model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Group By"
 msgstr "分组"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_item_action_date_groupby
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_item_action_date_groupby model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Group By Date"
 msgstr "按日期分组"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_csv_group_by_lines
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_group_by_lines
+msgid "Group By Lines"
+msgstr "按行分组"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Groupby Field aggregation"
 msgstr "按字段分组聚合"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Groupby field: {} cannot be aggregated by {}"
@@ -1247,18 +1745,32 @@ msgid "Header Background Color"
 msgstr "头部背景颜色"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_hide_legend
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
+#, python-format
+msgid "Here are your generated Items, kindly select to add them in your current dashboard"
+msgstr "以下是您生成的项目，请选择将其添加到当前仪表板中"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_hide_legend model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_radial_legend
 msgid "Hide all legend from the chart item"
 msgstr "隐藏图表项中的所有图例"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_9
+msgid "Horizontal Bar"
+msgstr "水平条"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_horizontalbar_chart
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_horizontalbar_chart
-#, python-format
 msgid "Horizontal Bar Chart"
 msgstr "横条图"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_22
+msgid "Horizontal Bar(sub-group)"
+msgstr "水平条（子组）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__hour
@@ -1268,23 +1780,25 @@ msgid "Hour"
 msgstr "小时"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_delete_wizard__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_duplicate_wizard__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__id
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__id
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__id
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__id
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__id
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__id
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_kpi_mail__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__id model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__id
 msgid "ID"
 msgstr "ID"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Icon"
 msgstr "图标"
 
@@ -1299,22 +1813,27 @@ msgid "Icon Option"
 msgstr "图标选项"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_import_list_view_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0 model:ir.actions.act_window,name:ks_dashboard_ninja.ks_import_dashboard_action
+#: model:ir.model,name:ks_dashboard_ninja.model_ks_dashboard_ninja_import model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_import_dashboard_form_view
 #, python-format
 msgid "Import Dashboard"
 msgstr "导入看板"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#, python-format
-msgid "Import Item"
-msgstr "导入项目"
+#: model:ir.ui.menu,name:ks_dashboard_ninja.ks_import_dashboard_menu
+msgid "Import Dashboards"
+msgstr "导入看板"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_compare_period
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Import-item"
+msgstr "导入-项目"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_compare_period model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Include Period"
 msgstr "包括期间"
 
@@ -1329,11 +1848,33 @@ msgid "Indian Format"
 msgstr "印度格式"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0
+#, python-format
+msgid "Info"
+msgstr "信息"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Invalid Date"
 msgstr "无效日期"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
+#, python-format
+msgid "Invalid file!"
+msgstr "无效文件！"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_is_cumulative
+msgid "Is Cumulative"
+msgstr "累计"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__ks_active
@@ -1352,15 +1893,21 @@ msgid "Item Configurations"
 msgstr "项目配置"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_info model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Item Description"
+msgstr "项目描述"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Item Duplicated"
 msgstr "项目复制"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Item Moved"
 msgstr "项目移动"
@@ -1371,20 +1918,42 @@ msgid "Item Type"
 msgstr "项目类型"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_update_items_data
-msgid "Item Update Interval"
-msgstr "项目更新间隔"
-
-#. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
-msgid "Item Update Interval.."
-msgstr "项目更新间隔..."
-
-#. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_kpi
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0
 #, python-format
+msgid "Item description"
+msgstr "项目描述"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0
+#, python-format
+msgid "Items added"
+msgstr "添加的项目"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0
+#, python-format
+msgid "Items are added to  ."
+msgstr "项目已添加到  。"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0
+#, python-format
+msgid "Items didn't render because AI provides invalid response for this model.Please try again"
+msgstr "项目未呈现，因为AI为此模型提供了无效响应。请再试一次"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0 code:addons/ks_dashboard_ninja/models/ks_ai_whole_dashboard.py:0
+#, python-format
+msgid "Items didn't render, please try again!"
+msgstr "项目未呈现，请重试！"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_kpi
 msgid "KPI"
 msgstr "KPI"
 
@@ -1417,6 +1986,37 @@ msgstr "KPI上年同期"
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_kpi_type__layout_1
 msgid "KPI With Target"
 msgstr "带有目标的KPI"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_arti_int__ks_type__ks_keyword
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
+msgid "Keywords"
+msgstr "关键字"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_18
+msgid "Kpi ( Number)"
+msgstr "Kpi ( 编号）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_17
+msgid "Kpi ( Percentage)"
+msgstr "Kpi（百分比）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_27
+msgid "Kpi (previous)"
+msgstr "Kpi（以前）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_19
+msgid "Kpi (sum)"
+msgstr "Kpi（总和）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_26
+msgid "Kpi 26(Average)"
+msgstr "Kpi 26（平均值）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_comparison
@@ -1469,6 +2069,11 @@ msgid "Kpi Preview"
 msgstr "Kpi预览"
 
 #. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_16
+msgid "Kpi Ratio"
+msgstr "Kpi比率"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_field_2
 msgid "Kpi Record Field"
 msgstr "Kpi 记录字段"
@@ -1482,6 +2087,21 @@ msgstr "Kpi 记录类型"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_start_date_2
 msgid "Kpi Start Date"
 msgstr "Kpi 开始日期"
+
+#. module: ks_dashboard_ninja
+#: model:ir.actions.server,name:ks_dashboard_ninja.ir_cron_send_target_email_ir_actions_server
+msgid "Kpi mail cron"
+msgstr "EMail邮件提醒"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__ks_type
+msgid "Ks AI Type"
+msgstr "Ks AI 类型"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_bounds
+msgid "Ks Bounds"
+msgstr "Ks边界"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_groupby_type
@@ -1514,6 +2134,21 @@ msgid "Ks Dashboard State"
 msgstr "Ks看板状态"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_db_name
+msgid "Ks Db Name"
+msgstr "Ks Db 数据库的名称"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_db_password
+msgid "Ks Db Password"
+msgstr "Ks Db 数据库的密码"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_db_user
+msgid "Ks Db User"
+msgstr "Ks Db 数据库的用户名"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_dn_header_lines
 msgid "Ks Dn Header Lines"
 msgstr "Ks Dn 标题行"
@@ -1527,6 +2162,16 @@ msgstr "Ks Dn 项目"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__ks_gridstack_config
 msgid "Ks Gridstack Config"
 msgstr "Ks Gridstack 配置"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_host
+msgid "Ks Host"
+msgstr "Ks 主机"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_is_external_db
+msgid "Ks Is External Db"
+msgstr "Ks 外部 Db"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_isDateFilterApplied
@@ -1544,9 +2189,29 @@ msgid "Ks Item Count"
 msgstr "Ks项目计数"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__ks_input_keywords
+msgid "Ks Keywords"
+msgstr "Ks 关键字"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_many2many_field_ordering
 msgid "Ks Many2Many Field Ordering"
 msgstr "Ks Many2Many字段排序"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__ks_model_show
+msgid "Ks Model Show"
+msgstr "Ks 模型展示"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_partners_map
+msgid "Ks Partners Map"
+msgstr "Ks映射合作伙伴"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_port
+msgid "Ks Port"
+msgstr "Ks 端口"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__ks_to_do_description_lines
@@ -1559,8 +2224,9 @@ msgid "Ks To Do Header"
 msgstr "Ks待办事项标题"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_month
@@ -1569,8 +2235,9 @@ msgid "Last 30 days"
 msgstr "最近30天"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_year
@@ -1579,8 +2246,9 @@ msgid "Last 365 days"
 msgstr "最近365天"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_week
@@ -1589,8 +2257,9 @@ msgid "Last 7 days"
 msgstr "最近7天"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_quarter
@@ -1599,8 +2268,9 @@ msgid "Last 90 days"
 msgstr "最近90天"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_day
@@ -1609,23 +2279,9 @@ msgid "Last Day"
 msgstr "昨天"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description____last_update
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers____last_update
-msgid "Last Modified on"
-msgstr "最后修改日"
-
-#. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_month
@@ -1634,8 +2290,9 @@ msgid "Last Month"
 msgstr "上个月"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_quarter
@@ -1644,38 +2301,63 @@ msgid "Last Quarter"
 msgstr "上一季度"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_delete_wizard__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_duplicate_wizard__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_kpi_mail__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__write_uid
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__write_uid
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__write_uid
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__write_uid
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__write_uid model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__write_uid
 msgid "Last Updated by"
 msgstr "最后更新人"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_delete_wizard__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_duplicate_wizard__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_kpi_mail__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__write_date
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__write_date
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__write_date
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__write_date
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_description__write_date model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_to_do_headers__write_date
 msgid "Last Updated on"
 msgstr "最后更新时间"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_week
@@ -1684,8 +2366,9 @@ msgid "Last Week"
 msgstr "上周"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_year
@@ -1729,8 +2412,8 @@ msgid "Layout 6"
 msgstr "布局 6"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
 #, python-format
 msgid "Layout Coming Soon"
 msgstr "布局即将推出"
@@ -1741,27 +2424,25 @@ msgid "Layout..."
 msgstr "布局..."
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_line_chart
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_line_chart
-#, python-format
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_6
 msgid "Line Chart"
 msgstr "折线图"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_measure_field_2
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_24
+msgid "Line Chart with values"
+msgstr "带值的折线图"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_measure_field_2 model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Line Measure"
 msgstr "行距"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_list_view
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_list_view
-#, python-format
 msgid "List View"
 msgstr "列表视图"
 
@@ -1786,9 +2467,39 @@ msgid "List View Type"
 msgstr "列表视图类型"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_map_chart_relation_groupby model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Map Group By"
+msgstr "映射分组依据"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_map_preview model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Map Preview"
+msgstr "映射预览"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_map_record_field
+msgid "Map Record Field"
+msgstr "映射记录字段"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_map_view
+msgid "Map View"
+msgstr "映射视图"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__material
+msgid "Material"
+msgstr "原料"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_unit
 msgid "Maximum limit 5 characters, for ex: km, m"
 msgstr "最大限制5个字符，例如：km、m"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
+msgid "Measure"
+msgstr "测量"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_chart_measure_field
@@ -1796,14 +2507,25 @@ msgid "Measure 1"
 msgstr "措施1"
 
 #. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_scatter_measure_x_id
+msgid "Measure X"
+msgstr "测量 X"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_scatter_measure_y_id
+msgid "Measure Y"
+msgstr "测量 Y"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Measures"
 msgstr "措施"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__ks_menu_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_menu_name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__ks_dashboard_menu_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__ks_menu_name
 msgid "Menu Name"
 msgstr "菜单名称"
 
@@ -1820,17 +2542,27 @@ msgid "Minute"
 msgstr "分钟"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__ks_model_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__ks_import_model_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__ks_import_model
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_arti_int__ks_import_model_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_custom_filters__ks_model_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_model_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__ks_model_id
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_arti_int__ks_type__ks_model model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_ai_whole_dashboard_form_view model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_ai_form_view
 msgid "Model"
 msgstr "模型"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__model_bool
+msgid "Model Bool"
+msgstr "模型 Bool"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__ks_model_name
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_model_name model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Model Name"
 msgstr "模型名称"
 
@@ -1852,51 +2584,88 @@ msgid "Month"
 msgstr "月份"
 
 #. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__td_month
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__td_month
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__td_month
+#, python-format
+msgid "Month to Date"
+msgstr "迄今为止的月份"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__month_year
 msgid "Month-Year"
 msgstr "月-年"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__moonrise
+msgid "Moonrise"
+msgstr ""
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0
 #, python-format
 msgid "More Info"
 msgstr "更多信息"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
-#: model:ir.actions.server,name:ks_dashboard_ninja.ks_move_dashboard
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 model:ir.actions.server,name:ks_dashboard_ninja.ks_move_dashboard
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_ninja_dashboard_item_action__ks_action__move
 #, python-format
 msgid "Move"
 msgstr "转移"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0
 #, python-format
 msgid "Move/Duplicate"
 msgstr "移动/复制"
 
 #. module: ks_dashboard_ninja
-#: model:ir.actions.client,name:ks_dashboard_ninja.board_dashboard_action_window
-#: model:ir.ui.menu,name:ks_dashboard_ninja.board_menu_root
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_tree
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__ks_multiplier_value
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_multiplier
+msgid "Multiplier"
+msgstr "乘数"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_item_multiplier__ks_multiplier_fields
+msgid "Multiplier Field"
+msgstr "乘数字段"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_multiplier_lines
+msgid "Multiplier Lines"
+msgstr "乘数线"
+
+#. module: ks_dashboard_ninja
+#: model:ir.actions.client,name:ks_dashboard_ninja.board_dashboard_action_window model:ir.ui.menu,name:ks_dashboard_ninja.board_menu_root model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_tree
 msgid "My Dashboard"
 msgstr "我的看板"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__name model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__name model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__name
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_template__name
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__name
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__name
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__name model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__name
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__name model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Name"
 msgstr "名称"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__name_seq
+msgid "Name Seq"
+msgstr "名称序号"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_company_id
@@ -1909,27 +2678,30 @@ msgid "Name..."
 msgstr "名称..."
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__neon
-msgid "Neon"
-msgstr "霓虹"
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "New Dashboard"
+msgstr "新的看板"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_to_do_dashboard.js:0
 #, python-format
 msgid "New Task"
 msgstr "新的任务"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
 #, python-format
 msgid "Next"
 msgstr "下一个"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_day
@@ -1938,8 +2710,9 @@ msgid "Next Day"
 msgstr "次日"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_month
@@ -1948,8 +2721,9 @@ msgid "Next Month"
 msgstr "下月"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_quarter
@@ -1958,8 +2732,9 @@ msgid "Next Quarter"
 msgstr "下季度"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_week
@@ -1968,8 +2743,9 @@ msgid "Next Week"
 msgstr "下周"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__n_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__n_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__n_year
@@ -1978,53 +2754,49 @@ msgid "Next Year"
 msgstr "明年"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_list_view/ks_list_view.xml:0
 #, python-format
 msgid "No Data Present"
 msgstr "数据不存在"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_to_do/ks_to_do.xml:0
 #, python-format
 msgid "No Section Available."
 msgstr "没有可用的部分。"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_to_do/ks_to_do.xml:0
 #, python-format
 msgid "No Tasks Available"
 msgstr "没有可用的任务"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_comparison__none
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_none
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_none
-#, python-format
 msgid "None"
 msgstr "None"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_tile/ks_tile.xml:0
 #, python-format
 msgid "Note :"
 msgstr "注释："
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_icon_dialog.xml:0
 #, python-format
 msgid "Note:"
 msgstr "注释："
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
-#, python-format
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_target_view__number
 msgid "Number"
 msgstr "编号"
 
@@ -2034,26 +2806,34 @@ msgid "Number System"
 msgstr "编号系统"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__data_source__odoo
+msgid "Odoo"
+msgstr "Odoo"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_pagination_limit
 msgid "Pagination Limit"
 msgstr "分页范围"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Pagination limit value cannot be Negative or Zero"
 msgstr "分页范围值不能为负数或零"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Past Excluding Today"
 msgstr "过去不包括今天"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__ls_past_until_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__ls_past_until_now
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__ls_past_until_now
@@ -2062,63 +2842,111 @@ msgid "Past Till Now"
 msgstr "过去到现在"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
-#, python-format
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_label_type__percent
+msgid "Percent"
+msgstr "百分比"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_comparison__percentage
 msgid "Percentage"
 msgstr "百分比"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_pie_chart
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_pie_chart
-#, python-format
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_14 model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_7
 msgid "Pie Chart"
 msgstr "饼状图"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "Please Install the Module which contains the following Model : %s ks_model_id"
 msgstr "请安装包含以下型号的模块 : %s ks_model_id"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Please chose any Data Type!"
 msgstr "请选择任意数据类型！"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0 code:addons/ks_dashboard_ninja/models/ks_ai_whole_dashboard.py:0
+#, python-format
+msgid "Please enter URL and API Key in General Settings"
+msgstr "请在常规设置中输入URL和API密钥"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/res_settings.py:0
+#, python-format
+msgid "Please enter URL and Email ID"
+msgstr "请输入URL和邮箱ID"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/res_settings.py:0
+#, python-format
+msgid "Please enter correct URL"
+msgstr "请输入正确的URL"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Please enter start date and end date"
 msgstr "请输入开始日期和结束日期"
 
 #. module: ks_dashboard_ninja
-#: code:addons/ks_dashboard_ninja/lib/ks_date_filter_selections.py:0
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0 code:addons/ks_dashboard_ninja/models/ks_ai_whole_dashboard.py:0
+#, python-format
+msgid "Please enter the Model"
+msgstr "请输入模型"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_ai_ninja_dashboard.py:0
+#, python-format
+msgid "Please put API key and URL"
+msgstr "请输入API密钥和URL"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_kpi/ks_kpi.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_list_view/ks_list_view.xml:0
+#, python-format
+msgid "Please run the appropriate Query"
+msgstr "请运行相应的查询"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/common_lib/ks_date_filter_selections.py:0
 #, python-format
 msgid "Please set the local timezone."
 msgstr "请设置本地时区。"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_icon_dialog.xml:0
 #, python-format
 msgid ""
 "Please use Font Awesome 4.7.0 icons only. E.g. 'fa-bell' or 'bell'.\n"
-"                                For more information visit"
+"                    For more information visit"
 msgstr ""
 "请仅使用Font Awesome 4.7.0图标。例如。 'fa-bell' 或 'bell'。\n"
-"                                欲了解更多信息，请访问"
+"                    欲了解更多信息，请访问"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_10
+msgid "Polar Area"
+msgstr ""
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_polararea_chart
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_polararea_chart
-#, python-format
 msgid "Polar Area Chart"
 msgstr "极地面积图"
 
@@ -2133,31 +2961,39 @@ msgid "Predefined"
 msgstr "预定义"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_preview
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_preview model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_create_dashboard_wizard_form
 msgid "Preview"
 msgstr "预览"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
 #, python-format
 msgid "Previous"
 msgstr "上一个"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Print"
 msgstr "打印"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
-#, python-format
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_target_view__progress_bar
 msgid "Progress Bar"
 msgstr "进度条"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_multiplier
+msgid "Provides the multiplication of record value"
+msgstr "提供记录值的乘积"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_multiplier_active
+msgid "Provides the visibility of multiplier field"
+msgstr "提供乘数字段的可见性"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__quarter
@@ -2167,18 +3003,45 @@ msgid "Quarter"
 msgstr "季度"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__td_quarter
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__td_quarter
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__td_quarter
+#, python-format
+msgid "Quarter to Date"
+msgstr "迄今为止的季度"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Quick Customize"
 msgstr "快速自定义"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
-#, python-format
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_radar_view
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_radar_view
+msgid "Radar View"
+msgstr "雷达视图"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_radialbar_chart
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_radialbar_chart
+msgid "Radial Bar Chart"
+msgstr "径向条形图"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_radial_preview
+msgid "Radial Preview"
+msgstr "径向预览"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_comparison__ratio
 msgid "Ratio"
 msgstr "比例"
 
@@ -2188,8 +3051,7 @@ msgid "Record Count"
 msgstr "记录计数"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_field
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_field model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Record Field"
 msgstr "记录字段"
 
@@ -2210,14 +3072,12 @@ msgid "Record Limit Data Visibility"
 msgstr "记录范围数据可见性"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_count_type
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_record_count_type model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Record Type"
 msgstr "记录类型"
 
 #. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_quick_edit_form_view
 msgid "Record Value"
 msgstr "记录值"
 
@@ -2227,71 +3087,81 @@ msgid "Redirects you to the selected view. "
 msgstr "重定向到选定的视图。 "
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
 #, python-format
 msgid "Remove"
 msgstr "移除"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_tile/ks_tile.xml:0
 #, python-format
 msgid "Remove Item"
 msgstr "移除项目"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_year_period
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_year_period model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Same Period Previous Years"
 msgstr "上年同期"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_quick_edit_view.xml:0
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_action
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0 code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_quick_edit_view.xml:0 model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_create_dashboard_wizard_form
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_dashboard_ninja_action model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_import_dashboard_form_view
 #, python-format
 msgid "Save"
 msgstr "保存"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Save Changes"
 msgstr "保存变更"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Save Changes as a New Layout"
 msgstr "将更改另存为新布局"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0
 #, python-format
 msgid "Save as Image"
 msgstr "另存为图片"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Save as New Layout"
 msgstr "另存为新布局"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0
 #, python-format
 msgid "Save as PDF"
 msgstr "另存为 PDF"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_scatter_chart
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_chart_type__ks_scatter_chart
+msgid "Scatter Chart"
+msgstr "散点图"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_scatter_field_id
+msgid "Scatter Points"
+msgstr "散点"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_item_search_view
@@ -2299,15 +3169,22 @@ msgid "Search Items"
 msgstr "搜索项目"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_icon_dialog.xml:0
 #, python-format
 msgid "Search fa-icon.."
 msgstr "搜索fa-icon.."
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_ai_keyword/ks_ai_keyword.xml:0
+#, python-format
+msgid "Search items with AI..."
+msgstr "使用AI搜索项目。。。"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_icon_dialog.xml:0
 #, python-format
 msgid "Search through site content"
 msgstr "搜索网站内容"
@@ -2319,22 +3196,18 @@ msgid "Section"
 msgstr "部分"
 
 #. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-msgid "Sections"
-msgstr "小节"
-
-#. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/editdialog.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_icon_dialog.xml:0
 #, python-format
 msgid "Select"
 msgstr "选择"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_pro.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_to_do_template.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_graphs/ks_dashboard_graphs.xml:0 code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_list_view/ks_dashboard_list.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_tile_view/ks_dashboard_tile.xml:0
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/ks_dashboard_to_do.xml:0
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_child_board__ks_dashboard_ninja_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_ninja_dashboard_item_action__ks_dashboard_ninja_id
 #, python-format
@@ -2347,23 +3220,72 @@ msgid "Select Dashboards"
 msgstr "选择看板"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_list_view/ks_list_view.xml:0
 #, python-format
-msgid "Select Icon"
-msgstr "选择图标"
+msgid "Select Fields and Group By to show in list view"
+msgstr "选择“字段”和“分组依据”以显示在列表视图中"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_list_view/ks_list_view.xml:0
+#, python-format
+msgid "Select Fields to show in list view"
+msgstr "选择要在列表视图中显示的字段"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_list_view/ks_list_view.xml:0
+#, python-format
+msgid "Select Group by Date to show list data."
+msgstr "选择“按日期分组”以显示列表数据。"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_image_widget.xml:0
 #, python-format
 msgid "Select Icons"
 msgstr "选择图标"
 
 #. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
+#, python-format
+msgid "Select None"
+msgstr "选择无"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_unit_selection
 msgid "Select Unit Type"
 msgstr "选择单元类型"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_kpi/ks_kpi.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_list_view/ks_list_view.xml:0
+#, python-format
+msgid "Select a model first"
+msgstr "先选择一个模型"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_kpi/ks_kpi.xml:0
+#, python-format
+msgid "Select a record field"
+msgstr "选择记录字段"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_kpi/ks_kpi.xml:0
+#, python-format
+msgid "Select a reocrd field"
+msgstr "选择记录字段"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
+#, python-format
+msgid "Select all"
+msgstr "全选"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_date_filter_selection
@@ -2401,8 +3323,7 @@ msgid "Select the font color. "
 msgstr "选择字体颜色。 "
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon_color
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_default_icon_color
 msgid "Select the icon to be displayed. "
 msgstr "选择要显示的图标。 "
 
@@ -2427,35 +3348,48 @@ msgid "Select the unit to be assigned to the value. "
 msgstr "选择要分配给值的单位。 "
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_auto_update_type
-msgid "Select the update type."
-msgstr "选择更新类型。"
-
-#. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Selected item is duplicated to  ."
 msgstr "所选项目将复制到  ."
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Selected item is moved to  ."
 msgstr "所选项目将移动到  ."
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
+#, python-format
+msgid "Selected model is not supported for Map View."
+msgstr "映射视图不支持所选模型。"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_domain_fix.js:0
 #, python-format
 msgid "Selected records"
 msgstr "所选记录"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_semi_circle_chart
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_semi_circle_chart model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Semi Circle Chart"
 msgstr "半圆图"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_21
+msgid "Semi Circle Pie Chart"
+msgstr "半圆饼图"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_send_mail
+msgid "Send Mail"
+msgstr "发送邮件"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.board_defined_filters
@@ -2465,20 +3399,21 @@ msgstr "分隔符名称（例如订单状态、截止日期）"
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board_defined_filters__sequence
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_action__sequence
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__ks_sequence
 msgid "Sequence"
 msgstr "序列"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__name_seq
+msgid "Sequential Queue ID"
+msgstr "顺序队列ID"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Set Current Layout"
 msgstr "设置当前布局"
-
-#. module: ks_dashboard_ninja
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
-msgid "Set Update Interval"
-msgstr "设置更新间隔"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_unit
@@ -2491,19 +3426,20 @@ msgid "Show Data Value"
 msgstr "显示数据值"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_label_type
+msgid "Show Data Value Type"
+msgstr "显示数据值类型"
+
+#. module: ks_dashboard_ninja
 #: model:res.groups,name:ks_dashboard_ninja.ks_dashboard_ninja_group_manager
 msgid "Show Full Dashboard Features"
 msgstr "显示完整的仪表板功能"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_hide_legend
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_radial_legend model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Show Legend"
 msgstr "显示图例"
-
-#. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_live_pop_up
-msgid "Show Live Update Pop Up"
-msgstr "显示实时更新弹出窗口"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_records
@@ -2516,9 +3452,18 @@ msgid "Show Target As Line"
 msgstr "将目标显示为线条"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_duplicate_wizard__ks_top_menu_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_ai_dashboard__ks_top_menu_id
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_top_menu_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__ks_top_menu_id
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_wizard__ks_top_menu_id model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_import_dashboard_form_view
 msgid "Show Under Menu"
 msgstr "在菜单下显示"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_fetch_key__ks_show_api_key
+msgid "Show key"
+msgstr "显示密钥"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_standard_goal_value
@@ -2536,13 +3481,14 @@ msgid "Smallest sequence give high priority and Highest sequence give low priori
 msgstr "最小序列给予高优先级，最高序列给予低优先级"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/res_settings.py:0
 #, python-format
-msgid "Some Items can not be imported Need Dashboard Ninja pro "
-msgstr "某些项目无法导入需要Dashboard Ninja pro高级版 "
+msgid "Some problem in sending request.Please contact at sales@ksolves.com"
+msgstr "发送请求时出现问题。请联系：sales@ksolves.com"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_filters.py:0
 #, python-format
 msgid "Something went wrong . Possibly it is due to wrong input type for domain"
@@ -2561,15 +3507,21 @@ msgid "Sort Order"
 msgstr "排序顺序"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dn_to_do_item.py:0
+#, python-format
+msgid "Special characters are not allowed only string and digits allow for section header"
+msgstr "不允许使用特殊字符，只有字符串和数字才允许用于节标题"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_bar_chart_stacked
 msgid "Stack the columns of the same record. "
 msgstr "堆叠同一记录的列。 "
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_bar_chart_stacked
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_bar_chart_stacked model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Stacked Bar Chart"
-msgstr "堆叠条形图"
+msgstr "堆叠横条图"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_standard_goal_value
@@ -2578,23 +3530,28 @@ msgstr "标准目标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_board__ks_dashboard_start_date
-#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_start_date
-#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_item_start_date model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Start Date"
 msgstr "开始日期"
 
 #. module: ks_dashboard_ninja
-#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0 code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Start date must be less than end date"
 msgstr "开始日期必须小于结束日期"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #, python-format
 msgid "Start date should be less than end date"
 msgstr "开始日期应小于结束日期"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_stop_mail_cron
+msgid "Stop mail cron"
+msgstr "停止邮件计划任务"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
@@ -2602,20 +3559,31 @@ msgid "Sub Group By Date"
 msgstr "按日期分组"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "Sub Groupby field: {} cannot be aggregated by {}"
 msgstr "Sub Groupby 字段: {} 无法由 {} 聚合"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/res_settings.py:0
+#, python-format
+msgid "Success"
+msgstr "成功"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_data_count_type__sum
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_comparison__sum
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_record_count_type_2__sum
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_record_count_type__sum
-#, python-format
 msgid "Sum"
 msgstr "求和"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Sync Data"
+msgstr "同步数据"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
@@ -2626,6 +3594,13 @@ msgstr "目标"
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_goal_lines
 msgid "Target Lines"
 msgstr "目标详情"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_to_do_item/editdialog.xml:0
+#, python-format
+msgid "Task"
+msgstr "任务"
 
 #. module: ks_dashboard_ninja
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
@@ -2653,6 +3628,15 @@ msgid "Template Type"
 msgstr "模板类型"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_country_code
+msgid ""
+"The ISO country code in two chars. \n"
+"You can use this field for quick search."
+msgstr ""
+"两个字符的ISO国家代码。 \n"
+"您可以使用此字段进行快速搜索。"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__name
 msgid "The item will be represented by this unique name."
 msgstr "该项目将由该唯一名称表示。"
@@ -2668,8 +3652,9 @@ msgid "This Action will be Performed at the end of Drill Down Action"
 msgstr "此操作将在向下搜索操作结束时执行"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__t_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__t_month
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_month
@@ -2678,8 +3663,9 @@ msgid "This Month"
 msgstr "本月"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__t_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__t_quarter
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_quarter
@@ -2688,8 +3674,9 @@ msgid "This Quarter"
 msgstr "本季度"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__t_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__t_week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_week
@@ -2698,8 +3685,9 @@ msgid "This Week"
 msgstr "本周"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__t_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__t_year
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__t_year
@@ -2711,30 +3699,54 @@ msgstr "本年"
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_show_records
 msgid ""
 "This field Enable the click on \n"
-"                                                                                  Dashboard "
-"Items to view the Odoo \n"
-"                                                                                  default "
-"view of records"
+"                                                                                  Dashboard Items to view the Odoo \n"
+"                                                                                  default view of records"
 msgstr ""
 "此字段启用点击 \n"
-"                                                                                  用于查看"
-"Odoo的仪表板项目 \n"
-"                                                                                  记录的默认"
-"视图"
+"                                                                                  用于查看Odoo的仪表板项目 \n"
+"                                                                                  记录的默认视图"
 
 #. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
 #, python-format
 msgid "This file is not supported"
 msgstr "该文件不支持"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_tile
-#, python-format
 msgid "Tile"
 msgstr "切片"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_1
+msgid "Tile (layout 1)"
+msgstr "Tile （布局 1）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_3
+msgid "Tile (layout 2)"
+msgstr "Tile （布局 2）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_2
+msgid "Tile (layout 3)"
+msgstr "Tile （布局 3）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_12
+msgid "Tile (layout 4)"
+msgstr "Tile （布局 4）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_4
+msgid "Tile (layout 5)"
+msgstr "Tile （布局 5）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_13
+msgid "Tile (layout 6)"
+msgstr "Tile （布局 6）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_format
@@ -2742,10 +3754,7 @@ msgid "To Change the number format showing in chart to given option"
 msgstr "将图表中显示的数字格式更改为给定选项"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_dashboard_item_type__ks_to_do
-#, python-format
 msgid "To Do"
 msgstr "待办事项"
 
@@ -2760,7 +3769,14 @@ msgid "To Do Preview"
 msgstr "待办事项预览"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
+#, python-format
+msgid "To Generate items with AI, use"
+msgstr "要使用AI生成项目，请使用"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "To add dashboard item, use"
@@ -2772,8 +3788,9 @@ msgid "To enable the record data limit field"
 msgstr "启用记录数据范围字段"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__l_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__l_day
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__l_day
@@ -2787,6 +3804,15 @@ msgid "Top Button Color"
 msgstr "顶部按钮颜色"
 
 #. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/color_picker/ks_color_picker.xml:0
+#, python-format
+msgid "Transparency :"
+msgstr "透明度："
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_group_by__ttype model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_csv_new__ttype
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_group_by__ttype model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_new__ttype
 #: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
 msgid "Type"
 msgstr "类型"
@@ -2797,12 +3823,17 @@ msgid "Type of record how record will show as count,sum and average of the recor
 msgstr "记录类型记录将如何显示为记录的计数、总和和平均值"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_res_config_settings__url model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.res_config_settings_inherit_view
+msgid "URL"
+msgstr "URL地址"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_list_view_type__ungrouped
 msgid "Un-Grouped"
 msgstr "未分组"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/js/ks_import_dashboard.js:0
 #, python-format
 msgid "Unarchive"
@@ -2814,27 +3845,40 @@ msgid "Update Interval for new items only"
 msgstr "仅新项目的更新间隔"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_auto_update_type__ks_live_update
-msgid "Update at every instance."
-msgstr "在每个实例上更新。"
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_csv_field model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Upload CSV File"
+msgstr "上传CSV文件"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_widget_toggle.xml:0
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_import__ks_import_dashboard
+msgid "Upload Dashboard"
+msgstr "上传看板"
+
+#. module: ks_dashboard_ninja
+#: model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.ks_import_dashboard_form_view
+msgid "Upload Dashboard Json"
+msgstr "上传看板Json"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__upload_excel model_terms:ir.ui.view,arch_db:ks_dashboard_ninja.item_form_view
+msgid "Upload Excel File"
+msgstr "上传Excel 文件"
+
+#. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_icon
-#, python-format
 msgid "Upload Icon"
 msgstr "上传图标"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_image_widget/ks_image_widget.xml:0
 #, python-format
 msgid "Uploading..."
 msgstr "上传中..."
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item_goal__ks_goal_value
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_data_label_type__value
 msgid "Value"
 msgstr "值"
 
@@ -2849,16 +3893,38 @@ msgid "View Items"
 msgstr "视图元素"
 
 #. module: ks_dashboard_ninja
-#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_item_color__warm
-msgid "Warm"
-msgstr "温暖"
-
-#. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_sub_groupby__week
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item_action__ks_item_action_date_groupby__week
 msgid "Week"
 msgstr "星期"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#, python-format
+msgid "Week To Date"
+msgstr "迄今为止的一周"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__td_week
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__td_week
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__td_week
+msgid "Week to Date"
+msgstr "迄今为止的一周"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#, python-format
+msgid "Welcome"
+msgstr "欢迎"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_data_label_type
+msgid "When \"Show Data Value Type\" selected this field enables to select label type in percent or value"
+msgstr "选择 \"显示数据值类型 \"时，该字段可以选择标签类型（百分比或数值）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_chart_date_groupby__year
@@ -2868,17 +3934,119 @@ msgid "Year"
 msgstr "年"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_ai_dash_action.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_board__ks_date_filter_selection__td_year
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection_2__td_year
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_ninja_item__ks_date_filter_selection__td_year
+#, python-format
+msgid "Year to Date"
+msgstr "今年迄今"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja.py:0
+#, python-format
+msgid "You cannot delete any default template"
+msgstr "不能删除任何默认模板"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
+#, python-format
+msgid "Your AI dashboard is empty"
+msgstr "你的AI仪表板为空"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "Your personal dashboard is empty"
 msgstr "您的个人仪表板为空"
 
 #. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_group_by__ttype__char
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_new__ttype__char
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_group_by__ttype__char
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_new__ttype__char
+msgid "char"
+msgstr "字符"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_group_by__ttype__date
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_new__ttype__date
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_group_by__ttype__date
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_new__ttype__date
+msgid "date"
+msgstr "日期"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_group_by__ttype__datetime
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_new__ttype__datetime
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_group_by__ttype__datetime
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_new__ttype__datetime
+msgid "datetime"
+msgstr "日期时间"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_group_by__ttype__float
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_new__ttype__float
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_group_by__ttype__float
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_new__ttype__float
+msgid "float"
+msgstr "浮点数"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__grid_corners
+msgid "grid corners"
+msgstr "栅格转角"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
 #: code:addons/ks_dashboard_ninja/models/ks_dashboard_ninja_items.py:0
 #, python-format
 msgid "if target lines is selected then cannot be set pagination value"
 msgstr "如果选择了目标行，则不能设置分页值"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/widgets/ks_item_type_selection/ks_item_type_selection.xml:0
+#, python-format
+msgid "image"
+msgstr "图片"
+
+#. module: ks_dashboard_ninja
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_group_by__ttype__integer
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_csv_new__ttype__integer
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_group_by__ttype__integer
+#: model:ir.model.fields.selection,name:ks_dashboard_ninja.selection__ks_dashboard_new__ttype__integer
+msgid "integer"
+msgstr "整数"
+
+#. module: ks_dashboard_ninja
+#. odoo-python
+#: code:addons/ks_dashboard_ninja/models/res_settings.py:0
+#, python-format
+msgid "key already generated.If you need assistance, feel free to contact at sales@ksolves.com"
+msgstr "密钥已生成。如果您需要帮助，请随时联系sales@ksolves.com"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja.js:0 code:addons/ks_dashboard_ninja/static/src/js/ks_dashboard_ninja_new.js:0
+#, python-format
+msgid "ks_open_setting"
+msgstr "ks_open_setting"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_8
+msgid "list view (Un-Grouped)"
+msgstr "列表视图（未分组）"
+
+#. module: ks_dashboard_ninja
+#: model:ks_dashboard_ninja.item,name:ks_dashboard_ninja.ks_default_item_28
+msgid "list view (grouped)"
+msgstr "列表视图（已分组）"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,field_description:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_list_target_deviation_field
@@ -2886,14 +4054,21 @@ msgid "list_field_id"
 msgstr "list_field_id"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
 #, python-format
 msgid "on top right corner."
 msgstr "在右上角。"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/xml/ks_ai_dash_ninja.xml:0
+#, python-format
+msgid "on top right."
+msgstr "在右上角。"
+
+#. module: ks_dashboard_ninja
+#. odoo-javascript
 #: code:addons/ks_dashboard_ninja/static/src/xml/ks_dn_global_filter.xml:0
 #, python-format
 msgid "or"
@@ -2910,24 +4085,20 @@ msgid "to do headers"
 msgstr "待办上部"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_kpi/ks_kpi.xml:0
 #, python-format
 msgid "vs Prev"
 msgstr "与上一个"
 
 #. module: ks_dashboard_ninja
-#. openerp-web
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_item_templates.xml:0
-#: code:addons/ks_dashboard_ninja/static/src/xml/ks_dashboard_ninja_templates.xml:0
+#. odoo-javascript
+#: code:addons/ks_dashboard_ninja/static/src/components/ks_dashboard_kpi_view/ks_dashboard_kpi.xml:0 code:addons/ks_dashboard_ninja/static/src/widgets/ks_kpi/ks_kpi.xml:0
 #, python-format
 msgid "vs Target"
 msgstr "与目标"
 
 #. module: ks_dashboard_ninja
 #: model:ir.model.fields,help:ks_dashboard_ninja.field_ks_dashboard_ninja_item__ks_export_all_records
-msgid ""
-"when click on boolean button, all the records will be downloaded which are present in "
-"entire list"
+msgid "when click on boolean button, all the records will be downloaded which are present in entire list"
 msgstr "当单击布尔按钮时，将下载整个列表中的所有记录"
